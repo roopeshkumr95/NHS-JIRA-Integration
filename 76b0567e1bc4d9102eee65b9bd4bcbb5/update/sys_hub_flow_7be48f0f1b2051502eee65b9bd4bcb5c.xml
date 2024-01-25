@@ -1,0 +1,1887 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>d47139b41bc05510892d4046b04bcbfe</copied_from>
+        <copied_from_name>Cascade JIRA Worknotes</copied_from_name>
+        <description/>
+        <internal_name>cascade_jira_worknotes__scoped</internal_name>
+        <label_cache>[{"name":"80f3595c-2e72-4360-bbf7-68651bf8c265.__dont_treat_as_error__","label":"9 - Update Jira Comment➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5789a834-842e-44ad-acb6-4296c1168988"}},{"name":"80f3595c-2e72-4360-bbf7-68651bf8c265.__action_status__","label":"9 - Update Jira Comment➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD4130d45fadb2dd10ea43284a3e85d631","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"adabd12f-1f05-472f-90c1-051a7533bf60"}},{"name":"80f3595c-2e72-4360-bbf7-68651bf8c265.comment","label":"9 - Update Jira Comment➛comment","reference_display":"comment","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f3a3d60c-888d-4918-8d5c-0ea3d39c7fb8"}},{"name":"b9b56c6d-4bbe-442d-94bc-4b6411a6a258.__dont_treat_as_error__","label":"3 - Get Issue ID--Scoped➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"d0107b2d-40ea-4ad3-8c1f-ac9062cf7f50"}},{"name":"b9b56c6d-4bbe-442d-94bc-4b6411a6a258.__action_status__","label":"3 - Get Issue ID--Scoped➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf8eb102341ac9150e31663527d59803b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"4a691531-f7a1-4b36-9402-435a7a9d3042"}},{"name":"b9b56c6d-4bbe-442d-94bc-4b6411a6a258._","label":"3 - Get Issue ID--Scoped➛IssueID","reference_display":"IssueID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bbda4ba8-5fb4-48f9-98dd-e87d4ccdc6ff"}},{"name":"50bb930c-5d1c-4bb3-ba38-bf4346631e8e.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"8f65f72d-90cf-411e-88f5-3fb1fcbb1a18"}},{"name":"50bb930c-5d1c-4bb3-ba38-bf4346631e8e.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"644ffb04-6e06-4dbd-a10a-093195da6513"}},{"name":"50bb930c-5d1c-4bb3-ba38-bf4346631e8e.variable","label":"1➛issue status","reference_display":"issue status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"85eedeef-d9ce-4133-8336-3b0058d17219"}},{"name":"2ffddda3-c0f6-489b-9740-1675e120b5d2.variable","label":"1➛variable","reference_display":"variable","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b2ceca2c-1168-4a5f-886c-e7bfa5031a85"}},{"name":"2ffddda3-c0f6-489b-9740-1675e120b5d2.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"f94c9a8c-3dfe-4bab-bef8-068aee388add"}},{"name":"2ffddda3-c0f6-489b-9740-1675e120b5d2.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"e41769e0-b8a5-4a63-b059-b14153215bc5"}},{"name":"abd679d8-0b5e-472a-b0e9-1161ef73d0de.__dont_treat_as_error__","label":"14➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"d0107b2d-40ea-4ad3-8c1f-ac9062cf7f50"}},{"name":"abd679d8-0b5e-472a-b0e9-1161ef73d0de.__action_status__","label":"14➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"4a691531-f7a1-4b36-9402-435a7a9d3042"}},{"name":"abd679d8-0b5e-472a-b0e9-1161ef73d0de._","label":"14➛IssueID","reference_display":"IssueID","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"bbda4ba8-5fb4-48f9-98dd-e87d4ccdc6ff"}},{"name":"b5caf645-7a9a-497f-98ef-339108e4ca52.variable","label":"3➛variable","reference_display":"variable","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"b2ceca2c-1168-4a5f-886c-e7bfa5031a85"}},{"name":"b5caf645-7a9a-497f-98ef-339108e4ca52.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"f94c9a8c-3dfe-4bab-bef8-068aee388add"}},{"name":"b5caf645-7a9a-497f-98ef-339108e4ca52.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"e41769e0-b8a5-4a63-b059-b14153215bc5"}},{"name":"Updated_1.table_name","label":"Trigger➛Task Table","reference":"task","reference_display":"Task","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}},{"name":"Updated_1.current.opened_by","label":"Trigger➛Task Record➛Opened by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"opened_by"},{"name":"Updated_1.current.sys_class_name","label":"Trigger➛Task Record➛Task type","reference":"","reference_display":"Task type","type":"choice","base_type":"choice","parent_table_name":"task","column_name":"sys_class_name","choices":[{"label":"Action","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Action","value":"project_action"},{"label":"Asset Reclamation Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Asset Reclamation Request","value":"asset_reclamation_request"},{"label":"Asset Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Asset Task","value":"asset_task"},{"label":"Budget Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Budget Task","value":"itfm_budget_task"},{"label":"Business Application Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Business Application Request","value":"business_app_request"},{"label":"Case","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Case","value":"sn_customerservice_case"},{"label":"Case Action Summary","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Case Action Summary","value":"sn_csm_case_digest_cas"},{"label":"Case Digest","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Case Digest","value":"sn_csm_case_digest_task"},{"label":"Case Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Case Task","value":"sn_customerservice_task"},{"label":"Catalog Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Catalog Task","value":"sc_task"},{"label":"Change Phase","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Change Phase","value":"change_phase"},{"label":"Change Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Change Request","value":"change_request"},{"label":"Change Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Change Task","value":"change_task"},{"label":"Chat Queue Entry","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Chat Queue Entry","value":"chat_queue_entry"},{"label":"CIM Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"CIM Task","value":"sn_cim_task"},{"label":"CMDB Data Management Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"CMDB Data Management Task","value":"cmdb_data_management_task"},{"label":"CMDB Multisource Recompute Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"CMDB Multisource Recompute Task","value":"cmdb_multisource_recomp_task"},{"label":"Coaching Assessment","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Coaching Assessment","value":"sn_coaching_assessment"},{"label":"Communication Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Communication Task","value":"comm_task"},{"label":"Consume Asset Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Consume Asset Task","value":"consume_asset_task"},{"label":"Customer Project","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Customer Project","value":"customer_project"},{"label":"Customer Project Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Customer Project Task","value":"customer_project_task"},{"label":"Decision","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Decision","value":"dmn_decision"},{"label":"Defect","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Defect","value":"rm_defect"},{"label":"Demand","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Demand","value":"dmn_demand"},{"label":"Demand Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Demand Task","value":"dmn_demand_task"},{"label":"Documentation Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Documentation Task","value":"rm_doc"},{"label":"Enhancement","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Enhancement","value":"rm_enhancement"},{"label":"Epic","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Epic","value":"rm_epic"},{"label":"Escalation","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Escalation","value":"sn_customerservice_escalation"},{"label":"Feature","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Feature","value":"rm_feature"},{"label":"Feature Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Feature Task","value":"release_task"},{"label":"Follow On Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Follow On Task","value":"cert_follow_on_task"},{"label":"Group approval","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Group approval","value":"sysapproval_group"},{"label":"Guidance Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Guidance Task","value":"help_guidance_task"},{"label":"Guided Setup Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Guided Setup Task","value":"gsw_task"},{"label":"Idea","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Idea","value":"im_idea_core"},{"label":"Idea","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Idea","value":"idea"},{"label":"IMAC","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"IMAC","value":"change_request_imac"},{"label":"Improvement Initiative","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Improvement Initiative","value":"sn_cim_register"},{"label":"Incident","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Incident","value":"incident"},{"label":"Incident Communication Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Incident Communication Task","value":"incident_alert_task"},{"label":"Incident Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Incident Task","value":"incident_task"},{"label":"Issue","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Issue","value":"issue"},{"label":"KB Submission","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"KB Submission","value":"kb_submission"},{"label":"Knowledge Feedback Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Knowledge Feedback Task","value":"kb_feedback_task"},{"label":"Moderation Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Moderation Task","value":"sn_communities_moderation_task"},{"label":"Onboarding task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Onboarding task","value":"sn_devops_ws_onboarding_task"},{"label":"Orphan CI Remediation","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Orphan CI Remediation","value":"orphan_ci_remediation"},{"label":"Penetration Test Assessment Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Penetration Test Assessment Request","value":"sn_vul_pen_test_assessment_request"},{"label":"Planned task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Planned task","value":"planned_task"},{"label":"Planned test task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Planned test task","value":"sn_test_management_planned_task"},{"label":"Post Case Review","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Post Case Review","value":"sn_csm_case_digest_pcr"},{"label":"Private Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Private Task","value":"vtb_task"},{"label":"Problem","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Problem","value":"problem"},{"label":"Problem Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Problem Task","value":"problem_task"},{"label":"Product","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Product","value":"rm_product"},{"label":"Program","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Program","value":"pm_program"},{"label":"Program Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Program Task","value":"pm_program_task"},{"label":"Project","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Project","value":"pm_project"},{"label":"Project Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Project Task","value":"pm_project_task"},{"label":"Project Task Link","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Project Task Link","value":"pm_project_task_link"},{"label":"Reclassification Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Reclassification Task","value":"reclassification_task"},{"label":"Recommended Field Remediation","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Recommended Field Remediation","value":"recommended_field_remediation"},{"label":"Release","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Release","value":"rm_release"},{"label":"Release Phase","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Release Phase","value":"release_phase"},{"label":"Release Phase","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Release Phase","value":"rm_release_phase"},{"label":"Release Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Release Task","value":"rm_task"},{"label":"Remediate Duplicate Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Remediate Duplicate Task","value":"reconcile_duplicate_task"},{"label":"Remediation Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Remediation Task","value":"sn_vul_vulnerability"},{"label":"Renew Lease Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Renew Lease Task","value":"statemgmt_renew_lease_task"},{"label":"Report Access Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Report Access Request","value":"sys_report_access_request"},{"label":"Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Request","value":"sc_request"},{"label":"Request Change","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Request Change","value":"project_change_request"},{"label":"Request new Knowledge Base","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Request new Knowledge Base","value":"kb_knowledge_base_request"},{"label":"Requested Item","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Requested Item","value":"sc_req_item"},{"label":"Required Field Remediation","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Required Field Remediation","value":"required_field_remediation"},{"label":"Requirement","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Requirement","value":"dmn_requirement"},{"label":"Roster schedule entry proposal","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Roster schedule entry proposal","value":"roster_schedule_span_proposal"},{"label":"Scan Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Scan Task","value":"scan_task"},{"label":"Scrum release","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Scrum release","value":"rm_release_scrum"},{"label":"Scrum task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Scrum task","value":"rm_scrum_task"},{"label":"SDLC release","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"SDLC release","value":"rm_release_sdlc"},{"label":"Security Case","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Security Case","value":"sn_ti_case"},{"label":"Security Incident","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Security Incident","value":"sn_si_incident"},{"label":"Security Incident Response Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Security Incident Response Task","value":"sn_si_task"},{"label":"Security Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Security Request","value":"sn_si_request"},{"label":"Security Scan Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Security Scan Request","value":"sn_si_scan_request"},{"label":"Service Order","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Service Order","value":"sm_order"},{"label":"Service Order Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Service Order Task","value":"sm_task"},{"label":"Service Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Service Task","value":"service_task"},{"label":"Sprint","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Sprint","value":"rm_sprint"},{"label":"Stale CI Remediation","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Stale CI Remediation","value":"stale_ci_remediation"},{"label":"Standard Change Proposal","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Standard Change Proposal","value":"std_change_proposal"},{"label":"Story","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Story","value":"rm_story"},{"label":"Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Task","value":"task"},{"label":"Test cycle","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Test cycle","value":"sn_test_management_test_cycle"},{"label":"Test execution suite","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Test execution suite","value":"sn_test_management_test_execution_suite"},{"label":"Test plan","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Test plan","value":"sn_test_management_test_plan"},{"label":"Testing Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Testing Task","value":"rm_test"},{"label":"Ticket","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Ticket","value":"ticket"},{"label":"Transfer Order Line Subtask","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Transfer Order Line Subtask","value":"alm_transfer_order_line_subtask"},{"label":"Transfer Order Line Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Transfer Order Line Task","value":"alm_transfer_order_line_task"},{"label":"Universal Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Universal Task","value":"sn_uni_task_universal_task"},{"label":"Upgrade History Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Upgrade History Task","value":"upgrade_history_task"}]},{"name":"c17dca11-0b8f-4561-8b31-b2a844d80b0b.__dont_treat_as_error__","label":"10 - Add Comment➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17dca11-0b8f-4561-8b31-b2a844d80b0b.__action_status__","label":"10 - Add Comment➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17dca11-0b8f-4561-8b31-b2a844d80b0b.comment_id","label":"10 - Add Comment➛Comment ID","reference_display":"Comment ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"20381553-1b8d-46e9-8280-da642fcbb2fb"}},{"name":"c17dca11-0b8f-4561-8b31-b2a844d80b0b.error_message","label":"10 - Add Comment➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"535b9aa2-20eb-4a27-88a3-fdadbcf9fc5d"}},{"name":"c17dca11-0b8f-4561-8b31-b2a844d80b0b.Status","label":"10 - Add Comment➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c2371a15-240b-43ec-be4f-271a06a6c77d"}},{"name":"1996338d-6184-42ab-9c4b-99e07119d16e.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1996338d-6184-42ab-9c4b-99e07119d16e.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1996338d-6184-42ab-9c4b-99e07119d16e.comment_id","label":"7➛Comment ID","reference_display":"Comment ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"20381553-1b8d-46e9-8280-da642fcbb2fb"}},{"name":"1996338d-6184-42ab-9c4b-99e07119d16e.error_message","label":"7➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"535b9aa2-20eb-4a27-88a3-fdadbcf9fc5d"}},{"name":"1996338d-6184-42ab-9c4b-99e07119d16e.Status","label":"7➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c2371a15-240b-43ec-be4f-271a06a6c77d"}},{"name":"446bfce1-1174-42d8-8b73-fab58f5a0c50.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"446bfce1-1174-42d8-8b73-fab58f5a0c50.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"446bfce1-1174-42d8-8b73-fab58f5a0c50.error_message","label":"6➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4c7033ef-af64-45e1-a3c2-a38ec27bbc88"}},{"name":"446bfce1-1174-42d8-8b73-fab58f5a0c50.Status","label":"6➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"41052ba1-9f1b-4549-b8f4-8be42d981598"}},{"name":"caacb37d-81df-4f77-a4f8-644114ba46a9._","label":"3➛IssueID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bbda4ba8-5fb4-48f9-98dd-e87d4ccdc6ff"}},{"name":"caacb37d-81df-4f77-a4f8-644114ba46a9.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"4a691531-f7a1-4b36-9402-435a7a9d3042"}},{"name":"caacb37d-81df-4f77-a4f8-644114ba46a9.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"d0107b2d-40ea-4ad3-8c1f-ac9062cf7f50"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{}},{"name":"7db94120-79ba-41f5-96b8-d9275a943e37.status","label":"4 - Look Up Transitions➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a45ac40d-2271-4e0f-984c-6f6449104aa3"}},{"name":"7db94120-79ba-41f5-96b8-d9275a943e37.error_message","label":"4 - Look Up Transitions➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"35711bf9-3e66-48ee-be7d-cee135c0e707"}},{"name":"7db94120-79ba-41f5-96b8-d9275a943e37.jira_transitions","label":"4 - Look Up Transitions➛Jira Transitions","reference_display":"Jira Transitions","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c4aa0c4f-ebba-4a34-9c1e-6e9e3c589b6d"}},{"name":"7db94120-79ba-41f5-96b8-d9275a943e37.__action_status__","label":"4 - Look Up Transitions➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7db94120-79ba-41f5-96b8-d9275a943e37.__dont_treat_as_error__","label":"4 - Look Up Transitions➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0a970565-4dc1-4237-9e24-aebb6273d52f.Status","label":"6 - Add Comment➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c2371a15-240b-43ec-be4f-271a06a6c77d"}},{"name":"0a970565-4dc1-4237-9e24-aebb6273d52f.error_message","label":"6 - Add Comment➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"535b9aa2-20eb-4a27-88a3-fdadbcf9fc5d"}},{"name":"0a970565-4dc1-4237-9e24-aebb6273d52f.comment_id","label":"6 - Add Comment➛Comment ID","reference_display":"Comment ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"20381553-1b8d-46e9-8280-da642fcbb2fb"}},{"name":"0a970565-4dc1-4237-9e24-aebb6273d52f.__action_status__","label":"6 - Add Comment➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0a970565-4dc1-4237-9e24-aebb6273d52f.__dont_treat_as_error__","label":"6 - Add Comment➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.x_nhsd_nhs_jira_in_issue_id","label":"Trigger➛Task Record➛Issue ID","reference":"","reference_display":"Issue ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"x_nhsd_nhs_jira_in_issue_id"},{"name":"Updated_1.current.x_nhsd_nhs_jira_in_issue_status","label":"Trigger➛Task Record➛Issue Status","reference":"","reference_display":"Issue Status","type":"string","base_type":"string","parent_table_name":"task","column_name":"x_nhsd_nhs_jira_in_issue_status"},{"name":"dec201aa-f822-407d-ab10-02ddfaad147a._","label":"1➛IssueID","reference_display":"IssueID","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"bbda4ba8-5fb4-48f9-98dd-e87d4ccdc6ff"}},{"name":"dec201aa-f822-407d-ab10-02ddfaad147a.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf8eb102341ac9150e31663527d59803b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"4a691531-f7a1-4b36-9402-435a7a9d3042"}},{"name":"dec201aa-f822-407d-ab10-02ddfaad147a.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"d0107b2d-40ea-4ad3-8c1f-ac9062cf7f50"}},{"name":"2dfad23d-fba2-44c4-be35-799d3a712cc6.variable","label":"1 - Get Issue Status--Scoped➛issue status","reference_display":"issue status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"85eedeef-d9ce-4133-8336-3b0058d17219"}},{"name":"2dfad23d-fba2-44c4-be35-799d3a712cc6.__action_status__","label":"1 - Get Issue Status--Scoped➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD9e8dd8272eac915003159a8277bb2f19","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"644ffb04-6e06-4dbd-a10a-093195da6513"}},{"name":"2dfad23d-fba2-44c4-be35-799d3a712cc6.__dont_treat_as_error__","label":"1 - Get Issue Status--Scoped➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"8f65f72d-90cf-411e-88f5-3fb1fcbb1a18"}}]</label_cache>
+        <master_snapshot>d775c38f1b2051502eee65b9bd4bcbf0</master_snapshot>
+        <name>Cascade JIRA Worknotes - Scoped</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>59ca9d7f1bba91502eee65b9bd4bcb31</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7be48f0f1b2051502eee65b9bd4bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cascade JIRA Worknotes - Scoped</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_hub_flow_7be48f0f1b2051502eee65b9bd4bcb5c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-30 12:29:27</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="task">x_nhsd_nhs_jira_in_issue_statusCHANGESTOCancel<item endquery="false" field="x_nhsd_nhs_jira_in_issue_status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Cancel"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>true</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>cog-roopesh.reddyb</sys_created_by>
+        <sys_created_on>2022-11-03 07:00:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59ca9d7f1bba91502eee65b9bd4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:40</sys_updated_on>
+        <table>task</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"15ca9d7f1bba91502eee65b9bd4bcb32","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>7be48f0f1b2051502eee65b9bd4bcb5c</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>cog-roopesh.reddyb</sys_created_by>
+        <sys_created_on>2022-11-03 07:00:40</sys_created_on>
+        <sys_id>15ca9d7f1bba91502eee65b9bd4bcb32</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-11-23 12:25:18</sys_updated_on>
+        <trigger display_value="">59ca9d7f1bba91502eee65b9bd4bcb31</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLSwqAMAwA0btk7Qm8ikioNrbFkkCbUkW8ux8EBbfzmA1SYZyiVAwMLQxmnF2Swhaam6onxpIpYQxZoe36T8+kGthdn6j/HS8bXh8VRlqU2JI9u6ZCsB8UKxG+hQAAAA==</data>
+        <document_id>15ca9d7f1bba91502eee65b9bd4bcb32</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>cog-roopesh.reddyb</sys_created_by>
+        <sys_created_on>2022-11-03 07:00:40</sys_created_on>
+        <sys_id>5dca9d7f1bba91502eee65b9bd4bcb32</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=7be48f0f1b2051502eee65b9bd4bcb5c^sys_idNOT IN15ca9d7f1bba91502eee65b9bd4bcb32"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=7be48f0f1b2051502eee65b9bd4bcb5c^sys_idNOT IN60f4cf0f1b2051502eee65b9bd4bcb68"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:52</sys_created_on>
+        <sys_id>60f4cf0f1b2051502eee65b9bd4bcb68</sys_id>
+        <sys_mod_count>81</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:41</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60f4cf0f1b2051502eee65b9bd4bcb68"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>60f4cf0f1b2051502eee65b9bd4bcb68</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:52</sys_created_on>
+        <sys_id>2cf4cf0f1b2051502eee65b9bd4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:52</sys_updated_on>
+        <value>task</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>60f4cf0f1b2051502eee65b9bd4bcb68</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:52</sys_created_on>
+        <sys_id>68f4cf0f1b2051502eee65b9bd4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:52</sys_updated_on>
+        <value>true</value>
+        <variable display_value="Run On Extended Tables">6cd14b76072200103bf10705afd30093</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>60f4cf0f1b2051502eee65b9bd4bcb68</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:52</sys_created_on>
+        <sys_id>a4f4cf0f1b2051502eee65b9bd4bcb69</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 06:59:51</sys_updated_on>
+        <value>x_nhsd_nhs_jira_in_issue_statusCHANGESTOCancel</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>60f4cf0f1b2051502eee65b9bd4bcb68</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:52</sys_created_on>
+        <sys_id>e0f4cf0f1b2051502eee65b9bd4bcb69</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+        <sys_updated_on>2022-11-01 11:36:58</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=60f4cf0f1b2051502eee65b9bd4bcb68"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7be48f0f1b2051502eee65b9bd4bcb5c^sys_idNOT INbfe48f0f1b2051502eee65b9bd4bcb5f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7be48f0f1b2051502eee65b9bd4bcb5c</id>
+        <name>Cascade JIRA Worknotes - Scoped</name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:49</sys_created_on>
+        <sys_id>bfe48f0f1b2051502eee65b9bd4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:49</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=bfe48f0f1b2051502eee65b9bd4bcb5f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7be48f0f1b2051502eee65b9bd4bcb5c^sys_idNOT IN04f48f0f1b2051502eee65b9bd4bcb74,08f48f0f1b2051502eee65b9bd4bcb6b,88f48f0f1b2051502eee65b9bd4bcb7a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</model>
+        <model_id>7be48f0f1b2051502eee65b9bd4bcb5c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:49</sys_created_on>
+        <sys_id>04f48f0f1b2051502eee65b9bd4bcb74</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=04f48f0f1b2051502eee65b9bd4bcb74"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</model>
+        <model_id>7be48f0f1b2051502eee65b9bd4bcb5c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:49</sys_created_on>
+        <sys_id>08f48f0f1b2051502eee65b9bd4bcb6b</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=08f48f0f1b2051502eee65b9bd4bcb6b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD80ca1d7f08ba9150836e00e6725156c1,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</model>
+        <model_id>7be48f0f1b2051502eee65b9bd4bcb5c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:49</sys_created_on>
+        <sys_id>88f48f0f1b2051502eee65b9bd4bcb7a</sys_id>
+        <sys_mod_count>80</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=88f48f0f1b2051502eee65b9bd4bcb7a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=7be48f0f1b2051502eee65b9bd4bcb5c^sys_idNOT IN14f48f0f1b2051502eee65b9bd4bcbf0,26ae88e31b2c91502eee65b9bd4bcb47,7bcdd0671bac91502eee65b9bd4bcb46,da1e5c671bac91502eee65b9bd4bcba3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Transitions (Deprecated)">e77a65f4db9e5300868f5404ce9619c7</action_type>
+        <action_type_parent display_value="Look Up Transitions (Deprecated)">1fad1691dbbd9300868f5404ce961917</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</flow>
+        <order>4</order>
+        <parent_ui_id>7acc613f-24da-45a8-923c-dd0bdf82d373</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:51</sys_created_on>
+        <sys_id>14f48f0f1b2051502eee65b9bd4bcbf0</sys_id>
+        <sys_mod_count>216</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-12-13 11:07:45</sys_updated_on>
+        <ui_id>7db94120-79ba-41f5-96b8-d9275a943e37</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=14f48f0f1b2051502eee65b9bd4bcbf0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>14f48f0f1b2051502eee65b9bd4bcbf0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:51</sys_created_on>
+        <sys_id>dcf48f0f1b2051502eee65b9bd4bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:51</sys_updated_on>
+        <value>629ad2bfdb1893005963ff041d961971</value>
+        <variable display_value="Connection Alias">61119a6887400010ca8560e3d6cb0b1a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=14f48f0f1b2051502eee65b9bd4bcbf0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>14f48f0f1b2051502eee65b9bd4bcbf0</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:51</sys_created_on>
+        <sys_id>98f48f0f1b2051502eee65b9bd4bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e77a65f4db9e5300868f5404ce9619c7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>issue_id</field>
+        <id>14f48f0f1b2051502eee65b9bd4bcbf0</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:51</sys_created_on>
+        <sys_id>5cf48f0f1b2051502eee65b9bd4bcbf1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 11:35:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e77a65f4db9e5300868f5404ce9619c7</table>
+        <value>{{b9b56c6d-4bbe-442d-94bc-4b6411a6a258._}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=14f48f0f1b2051502eee65b9bd4bcbf0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=14f48f0f1b2051502eee65b9bd4bcbf0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Add Comment (Deprecated)">d449725edbe4d7005963ff041d961999</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</flow>
+        <order>6</order>
+        <parent_ui_id>efa19bc7-2d60-4a35-bc36-f96ab2a824e7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:28:25</sys_created_on>
+        <sys_id>26ae88e31b2c91502eee65b9bd4bcb47</sys_id>
+        <sys_mod_count>168</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-12-13 11:07:45</sys_updated_on>
+        <ui_id>0a970565-4dc1-4237-9e24-aebb6273d52f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=26ae88e31b2c91502eee65b9bd4bcb47"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>26ae88e31b2c91502eee65b9bd4bcb47</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:28:25</sys_created_on>
+        <sys_id>2aae88e31b2c91502eee65b9bd4bcb4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 10:28:25</sys_updated_on>
+        <value>629ad2bfdb1893005963ff041d961971</value>
+        <variable display_value="Connection Alias">429b92ec87400010ca8560e3d6cb0b90</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>26ae88e31b2c91502eee65b9bd4bcb47</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:28:25</sys_created_on>
+        <sys_id>6eae88e31b2c91502eee65b9bd4bcb49</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+        <sys_updated_on>2022-08-24 13:51:26</sys_updated_on>
+        <value>ServiceNow Worknotes: Issue cancelled from ServiceNow</value>
+        <variable display_value="Comment">1c49725edbe4d7005963ff041d9619aa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=26ae88e31b2c91502eee65b9bd4bcb47"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_comment</field>
+        <id>26ae88e31b2c91502eee65b9bd4bcb47</id>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:28:25</sys_created_on>
+        <sys_id>26ae88e31b2c91502eee65b9bd4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 10:28:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d449725edbe4d7005963ff041d961999</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_issue_id</field>
+        <id>26ae88e31b2c91502eee65b9bd4bcb47</id>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:30:09</sys_created_on>
+        <sys_id>481fcc271b2c91502eee65b9bd4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 10:30:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d449725edbe4d7005963ff041d961999</table>
+        <value>{{Updated_1.current.x_nhsd_nhs_jira_in_issue_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>26ae88e31b2c91502eee65b9bd4bcb47</id>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:28:25</sys_created_on>
+        <sys_id>eaae88e31b2c91502eee65b9bd4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 10:28:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d449725edbe4d7005963ff041d961999</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=26ae88e31b2c91502eee65b9bd4bcb47"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=26ae88e31b2c91502eee65b9bd4bcb47"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Issue Status--Scoped">4e8d98271bac91502eee65b9bd4bcbd5</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 11:34:35</sys_created_on>
+        <sys_id>7bcdd0671bac91502eee65b9bd4bcb46</sys_id>
+        <sys_mod_count>140</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-12-13 11:07:45</sys_updated_on>
+        <ui_id>2dfad23d-fba2-44c4-be35-799d3a712cc6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7bcdd0671bac91502eee65b9bd4bcb46"/>
+    <sys_element_mapping action="delete_multiple" query="id=7bcdd0671bac91502eee65b9bd4bcb46"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>current_record</field>
+        <id>7bcdd0671bac91502eee65b9bd4bcb46</id>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 11:34:35</sys_created_on>
+        <sys_id>3bcdd0671bac91502eee65b9bd4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 11:34:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4e8d98271bac91502eee65b9bd4bcbd5</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7bcdd0671bac91502eee65b9bd4bcb46"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7bcdd0671bac91502eee65b9bd4bcb46"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Issue ID--Scoped">24eb10231bac91502eee65b9bd4bcb0d</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</flow>
+        <order>3</order>
+        <parent_ui_id>7acc613f-24da-45a8-923c-dd0bdf82d373</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 11:35:51</sys_created_on>
+        <sys_id>da1e5c671bac91502eee65b9bd4bcba3</sys_id>
+        <sys_mod_count>138</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-12-13 11:07:45</sys_updated_on>
+        <ui_id>b9b56c6d-4bbe-442d-94bc-4b6411a6a258</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=da1e5c671bac91502eee65b9bd4bcba3"/>
+    <sys_element_mapping action="delete_multiple" query="id=da1e5c671bac91502eee65b9bd4bcba3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>current_record</field>
+        <id>da1e5c671bac91502eee65b9bd4bcba3</id>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 11:35:51</sys_created_on>
+        <sys_id>de1e5c671bac91502eee65b9bd4bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 11:35:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_24eb10231bac91502eee65b9bd4bcb0d</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=da1e5c671bac91502eee65b9bd4bcba3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=da1e5c671bac91502eee65b9bd4bcba3"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=7be48f0f1b2051502eee65b9bd4bcb5c^sys_idNOT IN44f48f0f1b2051502eee65b9bd4bcb8a,48f48f0f1b2051502eee65b9bd4bcb84,5cf48f0f1b2051502eee65b9bd4bcbaf,aaae88e31b2c91502eee65b9bd4bcb4b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7def49051b291910892d4046b04bcbea</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>7acc613f-24da-45a8-923c-dd0bdf82d373</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:50</sys_created_on>
+        <sys_id>44f48f0f1b2051502eee65b9bd4bcb8a</sys_id>
+        <sys_mod_count>86</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:41</sys_updated_on>
+        <ui_id>efa19bc7-2d60-4a35-bc36-f96ab2a824e7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=44f48f0f1b2051502eee65b9bd4bcb8a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>44f48f0f1b2051502eee65b9bd4bcb8a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:50</sys_created_on>
+        <sys_id>c0f48f0f1b2051502eee65b9bd4bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:50</sys_updated_on>
+        <value>LookUp Transition is Success</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=44f48f0f1b2051502eee65b9bd4bcb8a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>44f48f0f1b2051502eee65b9bd4bcb8a</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:50</sys_created_on>
+        <sys_id>40f48f0f1b2051502eee65b9bd4bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:50</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{7db94120-79ba-41f5-96b8-d9275a943e37.status}}=Success</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>44f48f0f1b2051502eee65b9bd4bcb8a</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:50</sys_created_on>
+        <sys_id>8cf48f0f1b2051502eee65b9bd4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:50</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=44f48f0f1b2051502eee65b9bd4bcb8a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=44f48f0f1b2051502eee65b9bd4bcb8a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">39ef49051b291910892d4046b04bcbe1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:50</sys_created_on>
+        <sys_id>48f48f0f1b2051502eee65b9bd4bcb84</sys_id>
+        <sys_mod_count>85</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:41</sys_updated_on>
+        <ui_id>7acc613f-24da-45a8-923c-dd0bdf82d373</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=48f48f0f1b2051502eee65b9bd4bcb84"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>48f48f0f1b2051502eee65b9bd4bcb84</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:50</sys_created_on>
+        <sys_id>00f48f0f1b2051502eee65b9bd4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:50</sys_updated_on>
+        <value>Issue Status is Cancel</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=48f48f0f1b2051502eee65b9bd4bcb84"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>48f48f0f1b2051502eee65b9bd4bcb84</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:50</sys_created_on>
+        <sys_id>8cf48f0f1b2051502eee65b9bd4bcb88</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 11:34:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{2dfad23d-fba2-44c4-be35-799d3a712cc6.variable}}=Cancel</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>48f48f0f1b2051502eee65b9bd4bcb84</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:50</sys_created_on>
+        <sys_id>44f48f0f1b2051502eee65b9bd4bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:50</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=48f48f0f1b2051502eee65b9bd4bcb84"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=48f48f0f1b2051502eee65b9bd4bcb84"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">71ef49051b291910892d4046b04bcbf7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>7acc613f-24da-45a8-923c-dd0bdf82d373</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:50</sys_created_on>
+        <sys_id>5cf48f0f1b2051502eee65b9bd4bcbaf</sys_id>
+        <sys_mod_count>86</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:41</sys_updated_on>
+        <ui_id>aeb3950b-8827-4f30-8cac-d6be70a5220f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5cf48f0f1b2051502eee65b9bd4bcbaf"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5cf48f0f1b2051502eee65b9bd4bcbaf"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5cf48f0f1b2051502eee65b9bd4bcbaf"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f9ef49051b291910892d4046b04bcbf2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>efa19bc7-2d60-4a35-bc36-f96ab2a824e7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:28:25</sys_created_on>
+        <sys_id>aaae88e31b2c91502eee65b9bd4bcb4b</sys_id>
+        <sys_mod_count>65</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:41</sys_updated_on>
+        <ui_id>e334e7ac-03ab-4430-a4e5-ad3fe80c58a5</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=aaae88e31b2c91502eee65b9bd4bcb4b"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=aaae88e31b2c91502eee65b9bd4bcb4b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aaae88e31b2c91502eee65b9bd4bcb4b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c^sys_idNOT IN40f48f0f1b2051502eee65b9bd4bcb80,c0f48f0f1b2051502eee65b9bd4bcb79,c4f48f0f1b2051502eee65b9bd4bcb72"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:49</sys_created_on>
+        <sys_id>40f48f0f1b2051502eee65b9bd4bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c_changed_fields_en</sys_update_name>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:49</sys_created_on>
+        <sys_id>c0f48f0f1b2051502eee65b9bd4bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c_current_en</sys_update_name>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:27:49</sys_created_on>
+        <sys_id>c4f48f0f1b2051502eee65b9bd4bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c_table_name_en</sys_update_name>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:27:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7be48f0f1b2051502eee65b9bd4bcb5c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cascade_jira_worknotes__scoped</internal_name>
+        <label_cache>[{"name":"80f3595c-2e72-4360-bbf7-68651bf8c265.__dont_treat_as_error__","label":"9 - Update Jira Comment➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5789a834-842e-44ad-acb6-4296c1168988"}},{"name":"80f3595c-2e72-4360-bbf7-68651bf8c265.__action_status__","label":"9 - Update Jira Comment➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD4130d45fadb2dd10ea43284a3e85d631","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"adabd12f-1f05-472f-90c1-051a7533bf60"}},{"name":"80f3595c-2e72-4360-bbf7-68651bf8c265.comment","label":"9 - Update Jira Comment➛comment","reference_display":"comment","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f3a3d60c-888d-4918-8d5c-0ea3d39c7fb8"}},{"name":"b9b56c6d-4bbe-442d-94bc-4b6411a6a258.__dont_treat_as_error__","label":"3 - Get Issue ID--Scoped➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"d0107b2d-40ea-4ad3-8c1f-ac9062cf7f50"}},{"name":"b9b56c6d-4bbe-442d-94bc-4b6411a6a258.__action_status__","label":"3 - Get Issue ID--Scoped➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf8eb102341ac9150e31663527d59803b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"4a691531-f7a1-4b36-9402-435a7a9d3042"}},{"name":"b9b56c6d-4bbe-442d-94bc-4b6411a6a258._","label":"3 - Get Issue ID--Scoped➛IssueID","reference_display":"IssueID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bbda4ba8-5fb4-48f9-98dd-e87d4ccdc6ff"}},{"name":"50bb930c-5d1c-4bb3-ba38-bf4346631e8e.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"8f65f72d-90cf-411e-88f5-3fb1fcbb1a18"}},{"name":"50bb930c-5d1c-4bb3-ba38-bf4346631e8e.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"644ffb04-6e06-4dbd-a10a-093195da6513"}},{"name":"50bb930c-5d1c-4bb3-ba38-bf4346631e8e.variable","label":"1➛issue status","reference_display":"issue status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"85eedeef-d9ce-4133-8336-3b0058d17219"}},{"name":"2ffddda3-c0f6-489b-9740-1675e120b5d2.variable","label":"1➛variable","reference_display":"variable","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b2ceca2c-1168-4a5f-886c-e7bfa5031a85"}},{"name":"2ffddda3-c0f6-489b-9740-1675e120b5d2.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"f94c9a8c-3dfe-4bab-bef8-068aee388add"}},{"name":"2ffddda3-c0f6-489b-9740-1675e120b5d2.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"e41769e0-b8a5-4a63-b059-b14153215bc5"}},{"name":"abd679d8-0b5e-472a-b0e9-1161ef73d0de.__dont_treat_as_error__","label":"14➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"d0107b2d-40ea-4ad3-8c1f-ac9062cf7f50"}},{"name":"abd679d8-0b5e-472a-b0e9-1161ef73d0de.__action_status__","label":"14➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"4a691531-f7a1-4b36-9402-435a7a9d3042"}},{"name":"abd679d8-0b5e-472a-b0e9-1161ef73d0de._","label":"14➛IssueID","reference_display":"IssueID","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"bbda4ba8-5fb4-48f9-98dd-e87d4ccdc6ff"}},{"name":"b5caf645-7a9a-497f-98ef-339108e4ca52.variable","label":"3➛variable","reference_display":"variable","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"b2ceca2c-1168-4a5f-886c-e7bfa5031a85"}},{"name":"b5caf645-7a9a-497f-98ef-339108e4ca52.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"f94c9a8c-3dfe-4bab-bef8-068aee388add"}},{"name":"b5caf645-7a9a-497f-98ef-339108e4ca52.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"e41769e0-b8a5-4a63-b059-b14153215bc5"}},{"name":"Updated_1.table_name","label":"Trigger➛Task Table","reference":"task","reference_display":"Task","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}},{"name":"Updated_1.current.opened_by","label":"Trigger➛Task Record➛Opened by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"opened_by"},{"name":"Updated_1.current.sys_class_name","label":"Trigger➛Task Record➛Task type","reference":"","reference_display":"Task type","type":"choice","base_type":"choice","parent_table_name":"task","column_name":"sys_class_name","choices":[{"label":"Action","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Action","value":"project_action"},{"label":"Asset Reclamation Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Asset Reclamation Request","value":"asset_reclamation_request"},{"label":"Asset Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Asset Task","value":"asset_task"},{"label":"Budget Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Budget Task","value":"itfm_budget_task"},{"label":"Business Application Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Business Application Request","value":"business_app_request"},{"label":"Case","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Case","value":"sn_customerservice_case"},{"label":"Case Action Summary","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Case Action Summary","value":"sn_csm_case_digest_cas"},{"label":"Case Digest","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Case Digest","value":"sn_csm_case_digest_task"},{"label":"Case Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Case Task","value":"sn_customerservice_task"},{"label":"Catalog Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Catalog Task","value":"sc_task"},{"label":"Change Phase","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Change Phase","value":"change_phase"},{"label":"Change Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Change Request","value":"change_request"},{"label":"Change Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Change Task","value":"change_task"},{"label":"Chat Queue Entry","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Chat Queue Entry","value":"chat_queue_entry"},{"label":"CIM Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"CIM Task","value":"sn_cim_task"},{"label":"CMDB Data Management Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"CMDB Data Management Task","value":"cmdb_data_management_task"},{"label":"CMDB Multisource Recompute Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"CMDB Multisource Recompute Task","value":"cmdb_multisource_recomp_task"},{"label":"Coaching Assessment","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Coaching Assessment","value":"sn_coaching_assessment"},{"label":"Communication Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Communication Task","value":"comm_task"},{"label":"Consume Asset Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Consume Asset Task","value":"consume_asset_task"},{"label":"Customer Project","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Customer Project","value":"customer_project"},{"label":"Customer Project Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Customer Project Task","value":"customer_project_task"},{"label":"Decision","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Decision","value":"dmn_decision"},{"label":"Defect","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Defect","value":"rm_defect"},{"label":"Demand","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Demand","value":"dmn_demand"},{"label":"Demand Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Demand Task","value":"dmn_demand_task"},{"label":"Documentation Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Documentation Task","value":"rm_doc"},{"label":"Enhancement","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Enhancement","value":"rm_enhancement"},{"label":"Epic","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Epic","value":"rm_epic"},{"label":"Escalation","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Escalation","value":"sn_customerservice_escalation"},{"label":"Feature","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Feature","value":"rm_feature"},{"label":"Feature Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Feature Task","value":"release_task"},{"label":"Follow On Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Follow On Task","value":"cert_follow_on_task"},{"label":"Group approval","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Group approval","value":"sysapproval_group"},{"label":"Guidance Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Guidance Task","value":"help_guidance_task"},{"label":"Guided Setup Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Guided Setup Task","value":"gsw_task"},{"label":"Idea","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Idea","value":"im_idea_core"},{"label":"Idea","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Idea","value":"idea"},{"label":"IMAC","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"IMAC","value":"change_request_imac"},{"label":"Improvement Initiative","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Improvement Initiative","value":"sn_cim_register"},{"label":"Incident","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Incident","value":"incident"},{"label":"Incident Communication Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Incident Communication Task","value":"incident_alert_task"},{"label":"Incident Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Incident Task","value":"incident_task"},{"label":"Issue","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Issue","value":"issue"},{"label":"KB Submission","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"KB Submission","value":"kb_submission"},{"label":"Knowledge Feedback Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Knowledge Feedback Task","value":"kb_feedback_task"},{"label":"Moderation Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Moderation Task","value":"sn_communities_moderation_task"},{"label":"Onboarding task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Onboarding task","value":"sn_devops_ws_onboarding_task"},{"label":"Orphan CI Remediation","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Orphan CI Remediation","value":"orphan_ci_remediation"},{"label":"Penetration Test Assessment Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Penetration Test Assessment Request","value":"sn_vul_pen_test_assessment_request"},{"label":"Planned task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Planned task","value":"planned_task"},{"label":"Planned test task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Planned test task","value":"sn_test_management_planned_task"},{"label":"Post Case Review","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Post Case Review","value":"sn_csm_case_digest_pcr"},{"label":"Private Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Private Task","value":"vtb_task"},{"label":"Problem","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Problem","value":"problem"},{"label":"Problem Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Problem Task","value":"problem_task"},{"label":"Product","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Product","value":"rm_product"},{"label":"Program","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Program","value":"pm_program"},{"label":"Program Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Program Task","value":"pm_program_task"},{"label":"Project","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Project","value":"pm_project"},{"label":"Project Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Project Task","value":"pm_project_task"},{"label":"Project Task Link","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Project Task Link","value":"pm_project_task_link"},{"label":"Reclassification Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Reclassification Task","value":"reclassification_task"},{"label":"Recommended Field Remediation","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Recommended Field Remediation","value":"recommended_field_remediation"},{"label":"Release","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Release","value":"rm_release"},{"label":"Release Phase","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Release Phase","value":"release_phase"},{"label":"Release Phase","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Release Phase","value":"rm_release_phase"},{"label":"Release Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Release Task","value":"rm_task"},{"label":"Remediate Duplicate Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Remediate Duplicate Task","value":"reconcile_duplicate_task"},{"label":"Remediation Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Remediation Task","value":"sn_vul_vulnerability"},{"label":"Renew Lease Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Renew Lease Task","value":"statemgmt_renew_lease_task"},{"label":"Report Access Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Report Access Request","value":"sys_report_access_request"},{"label":"Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Request","value":"sc_request"},{"label":"Request Change","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Request Change","value":"project_change_request"},{"label":"Request new Knowledge Base","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Request new Knowledge Base","value":"kb_knowledge_base_request"},{"label":"Requested Item","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Requested Item","value":"sc_req_item"},{"label":"Required Field Remediation","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Required Field Remediation","value":"required_field_remediation"},{"label":"Requirement","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Requirement","value":"dmn_requirement"},{"label":"Roster schedule entry proposal","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Roster schedule entry proposal","value":"roster_schedule_span_proposal"},{"label":"Scan Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Scan Task","value":"scan_task"},{"label":"Scrum release","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Scrum release","value":"rm_release_scrum"},{"label":"Scrum task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Scrum task","value":"rm_scrum_task"},{"label":"SDLC release","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"SDLC release","value":"rm_release_sdlc"},{"label":"Security Case","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Security Case","value":"sn_ti_case"},{"label":"Security Incident","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Security Incident","value":"sn_si_incident"},{"label":"Security Incident Response Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Security Incident Response Task","value":"sn_si_task"},{"label":"Security Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Security Request","value":"sn_si_request"},{"label":"Security Scan Request","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Security Scan Request","value":"sn_si_scan_request"},{"label":"Service Order","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Service Order","value":"sm_order"},{"label":"Service Order Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Service Order Task","value":"sm_task"},{"label":"Service Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Service Task","value":"service_task"},{"label":"Sprint","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Sprint","value":"rm_sprint"},{"label":"Stale CI Remediation","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Stale CI Remediation","value":"stale_ci_remediation"},{"label":"Standard Change Proposal","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Standard Change Proposal","value":"std_change_proposal"},{"label":"Story","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Story","value":"rm_story"},{"label":"Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Task","value":"task"},{"label":"Test cycle","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Test cycle","value":"sn_test_management_test_cycle"},{"label":"Test execution suite","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Test execution suite","value":"sn_test_management_test_execution_suite"},{"label":"Test plan","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Test plan","value":"sn_test_management_test_plan"},{"label":"Testing Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Testing Task","value":"rm_test"},{"label":"Ticket","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Ticket","value":"ticket"},{"label":"Transfer Order Line Subtask","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Transfer Order Line Subtask","value":"alm_transfer_order_line_subtask"},{"label":"Transfer Order Line Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Transfer Order Line Task","value":"alm_transfer_order_line_task"},{"label":"Universal Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Universal Task","value":"sn_uni_task_universal_task"},{"label":"Upgrade History Task","used":false,"missing":false,"reference":false,"selected":false,"image":"","rawLabel":"Upgrade History Task","value":"upgrade_history_task"}]},{"name":"c17dca11-0b8f-4561-8b31-b2a844d80b0b.__dont_treat_as_error__","label":"10 - Add Comment➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17dca11-0b8f-4561-8b31-b2a844d80b0b.__action_status__","label":"10 - Add Comment➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c17dca11-0b8f-4561-8b31-b2a844d80b0b.comment_id","label":"10 - Add Comment➛Comment ID","reference_display":"Comment ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"20381553-1b8d-46e9-8280-da642fcbb2fb"}},{"name":"c17dca11-0b8f-4561-8b31-b2a844d80b0b.error_message","label":"10 - Add Comment➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"535b9aa2-20eb-4a27-88a3-fdadbcf9fc5d"}},{"name":"c17dca11-0b8f-4561-8b31-b2a844d80b0b.Status","label":"10 - Add Comment➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c2371a15-240b-43ec-be4f-271a06a6c77d"}},{"name":"1996338d-6184-42ab-9c4b-99e07119d16e.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1996338d-6184-42ab-9c4b-99e07119d16e.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1996338d-6184-42ab-9c4b-99e07119d16e.comment_id","label":"7➛Comment ID","reference_display":"Comment ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"20381553-1b8d-46e9-8280-da642fcbb2fb"}},{"name":"1996338d-6184-42ab-9c4b-99e07119d16e.error_message","label":"7➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"535b9aa2-20eb-4a27-88a3-fdadbcf9fc5d"}},{"name":"1996338d-6184-42ab-9c4b-99e07119d16e.Status","label":"7➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c2371a15-240b-43ec-be4f-271a06a6c77d"}},{"name":"446bfce1-1174-42d8-8b73-fab58f5a0c50.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"446bfce1-1174-42d8-8b73-fab58f5a0c50.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"446bfce1-1174-42d8-8b73-fab58f5a0c50.error_message","label":"6➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4c7033ef-af64-45e1-a3c2-a38ec27bbc88"}},{"name":"446bfce1-1174-42d8-8b73-fab58f5a0c50.Status","label":"6➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"41052ba1-9f1b-4549-b8f4-8be42d981598"}},{"name":"caacb37d-81df-4f77-a4f8-644114ba46a9._","label":"3➛IssueID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bbda4ba8-5fb4-48f9-98dd-e87d4ccdc6ff"}},{"name":"caacb37d-81df-4f77-a4f8-644114ba46a9.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"4a691531-f7a1-4b36-9402-435a7a9d3042"}},{"name":"caacb37d-81df-4f77-a4f8-644114ba46a9.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"d0107b2d-40ea-4ad3-8c1f-ac9062cf7f50"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{}},{"name":"7db94120-79ba-41f5-96b8-d9275a943e37.status","label":"4 - Look Up Transitions➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a45ac40d-2271-4e0f-984c-6f6449104aa3"}},{"name":"7db94120-79ba-41f5-96b8-d9275a943e37.error_message","label":"4 - Look Up Transitions➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"35711bf9-3e66-48ee-be7d-cee135c0e707"}},{"name":"7db94120-79ba-41f5-96b8-d9275a943e37.jira_transitions","label":"4 - Look Up Transitions➛Jira Transitions","reference_display":"Jira Transitions","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c4aa0c4f-ebba-4a34-9c1e-6e9e3c589b6d"}},{"name":"7db94120-79ba-41f5-96b8-d9275a943e37.__action_status__","label":"4 - Look Up Transitions➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7db94120-79ba-41f5-96b8-d9275a943e37.__dont_treat_as_error__","label":"4 - Look Up Transitions➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0a970565-4dc1-4237-9e24-aebb6273d52f.Status","label":"6 - Add Comment➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c2371a15-240b-43ec-be4f-271a06a6c77d"}},{"name":"0a970565-4dc1-4237-9e24-aebb6273d52f.error_message","label":"6 - Add Comment➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"535b9aa2-20eb-4a27-88a3-fdadbcf9fc5d"}},{"name":"0a970565-4dc1-4237-9e24-aebb6273d52f.comment_id","label":"6 - Add Comment➛Comment ID","reference_display":"Comment ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"20381553-1b8d-46e9-8280-da642fcbb2fb"}},{"name":"0a970565-4dc1-4237-9e24-aebb6273d52f.__action_status__","label":"6 - Add Comment➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0a970565-4dc1-4237-9e24-aebb6273d52f.__dont_treat_as_error__","label":"6 - Add Comment➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.x_nhsd_nhs_jira_in_issue_id","label":"Trigger➛Task Record➛Issue ID","reference":"","reference_display":"Issue ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"x_nhsd_nhs_jira_in_issue_id"},{"name":"Updated_1.current.x_nhsd_nhs_jira_in_issue_status","label":"Trigger➛Task Record➛Issue Status","reference":"","reference_display":"Issue Status","type":"string","base_type":"string","parent_table_name":"task","column_name":"x_nhsd_nhs_jira_in_issue_status"},{"name":"dec201aa-f822-407d-ab10-02ddfaad147a._","label":"1➛IssueID","reference_display":"IssueID","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"bbda4ba8-5fb4-48f9-98dd-e87d4ccdc6ff"}},{"name":"dec201aa-f822-407d-ab10-02ddfaad147a.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf8eb102341ac9150e31663527d59803b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"4a691531-f7a1-4b36-9402-435a7a9d3042"}},{"name":"dec201aa-f822-407d-ab10-02ddfaad147a.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"d0107b2d-40ea-4ad3-8c1f-ac9062cf7f50"}},{"name":"2dfad23d-fba2-44c4-be35-799d3a712cc6.variable","label":"1 - Get Issue Status--Scoped➛issue status","reference_display":"issue status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"85eedeef-d9ce-4133-8336-3b0058d17219"}},{"name":"2dfad23d-fba2-44c4-be35-799d3a712cc6.__action_status__","label":"1 - Get Issue Status--Scoped➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD9e8dd8272eac915003159a8277bb2f19","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"644ffb04-6e06-4dbd-a10a-093195da6513"}},{"name":"2dfad23d-fba2-44c4-be35-799d3a712cc6.__dont_treat_as_error__","label":"1 - Get Issue Status--Scoped➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"8f65f72d-90cf-411e-88f5-3fb1fcbb1a18"}}]</label_cache>
+        <master>true</master>
+        <name>Cascade JIRA Worknotes - Scoped</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Cascade JIRA Worknotes - Scoped">7be48f0f1b2051502eee65b9bd4bcb5c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d775c38f1b2051502eee65b9bd4bcbf0</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:36</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d775c38f1b2051502eee65b9bd4bcbf0^sys_idNOT IN5485878f1b2051502eee65b9bd4bcb89"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:18</sys_created_on>
+        <sys_id>5485878f1b2051502eee65b9bd4bcb89</sys_id>
+        <sys_mod_count>75</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:41</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5485878f1b2051502eee65b9bd4bcb89"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>5485878f1b2051502eee65b9bd4bcb89</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:18</sys_created_on>
+        <sys_id>1c85878f1b2051502eee65b9bd4bcb8a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+        <sys_updated_on>2022-11-01 11:37:22</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>5485878f1b2051502eee65b9bd4bcb89</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:18</sys_created_on>
+        <sys_id>5485878f1b2051502eee65b9bd4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:18</sys_updated_on>
+        <value>task</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>5485878f1b2051502eee65b9bd4bcb89</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:18</sys_created_on>
+        <sys_id>9085878f1b2051502eee65b9bd4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:18</sys_updated_on>
+        <value>true</value>
+        <variable display_value="Run On Extended Tables">6cd14b76072200103bf10705afd30093</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>5485878f1b2051502eee65b9bd4bcb89</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:18</sys_created_on>
+        <sys_id>dc85878f1b2051502eee65b9bd4bcb8a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:35</sys_updated_on>
+        <value>x_nhsd_nhs_jira_in_issue_statusCHANGESTOCancel</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=5485878f1b2051502eee65b9bd4bcb89"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d775c38f1b2051502eee65b9bd4bcbf0^sys_idNOT INa375c38f1b2051502eee65b9bd4bcbf2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d775c38f1b2051502eee65b9bd4bcbf0</id>
+        <name>Cascade JIRA Worknotes - Scoped</name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:14</sys_created_on>
+        <sys_id>a375c38f1b2051502eee65b9bd4bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a375c38f1b2051502eee65b9bd4bcbf2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d775c38f1b2051502eee65b9bd4bcbf0^sys_idNOT IN2775c38f1b2051502eee65b9bd4bcbf5,b375478f1b2051502eee65b9bd4bcb85,e375478f1b2051502eee65b9bd4bcb6d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</model>
+        <model_id>d775c38f1b2051502eee65b9bd4bcbf0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:14</sys_created_on>
+        <sys_id>2775c38f1b2051502eee65b9bd4bcbf5</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2775c38f1b2051502eee65b9bd4bcbf5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</model>
+        <model_id>d775c38f1b2051502eee65b9bd4bcbf0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:15</sys_created_on>
+        <sys_id>b375478f1b2051502eee65b9bd4bcb85</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b375478f1b2051502eee65b9bd4bcb85"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD80ca1d7f08ba9150836e00e6725156c1,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</model>
+        <model_id>d775c38f1b2051502eee65b9bd4bcbf0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:15</sys_created_on>
+        <sys_id>e375478f1b2051502eee65b9bd4bcb6d</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e375478f1b2051502eee65b9bd4bcb6d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d775c38f1b2051502eee65b9bd4bcbf0^sys_idNOT IN063e18a71bac91502eee65b9bd4bcb74,152fc4671b2c91502eee65b9bd4bcbb2,4885878f1b2051502eee65b9bd4bcb21,c23e18a71bac91502eee65b9bd4bcb45"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Issue ID--Scoped">24eb10231bac91502eee65b9bd4bcb0d</action_type>
+        <action_type_parent display_value="Get Issue ID--Scoped">106b50ef1b6c91502eee65b9bd4bcb40</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</flow>
+        <order>3</order>
+        <parent_ui_id>7acc613f-24da-45a8-923c-dd0bdf82d373</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 11:36:23</sys_created_on>
+        <sys_id>063e18a71bac91502eee65b9bd4bcb74</sys_id>
+        <sys_mod_count>76</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:36</sys_updated_on>
+        <ui_id>b9b56c6d-4bbe-442d-94bc-4b6411a6a258</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=063e18a71bac91502eee65b9bd4bcb74"/>
+    <sys_element_mapping action="delete_multiple" query="id=063e18a71bac91502eee65b9bd4bcb74"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>current_record</field>
+        <id>063e18a71bac91502eee65b9bd4bcb74</id>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 11:36:23</sys_created_on>
+        <sys_id>463e18a71bac91502eee65b9bd4bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 11:36:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_24eb10231bac91502eee65b9bd4bcb0d</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=063e18a71bac91502eee65b9bd4bcb74"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=063e18a71bac91502eee65b9bd4bcb74"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Add Comment (Deprecated)">d449725edbe4d7005963ff041d961999</action_type>
+        <action_type_parent display_value="Add Comment (Deprecated)">8bae62b7db5893009a985404ce9619de</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</flow>
+        <order>6</order>
+        <parent_ui_id>efa19bc7-2d60-4a35-bc36-f96ab2a824e7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:30:31</sys_created_on>
+        <sys_id>152fc4671b2c91502eee65b9bd4bcbb2</sys_id>
+        <sys_mod_count>88</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:36</sys_updated_on>
+        <ui_id>0a970565-4dc1-4237-9e24-aebb6273d52f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=152fc4671b2c91502eee65b9bd4bcbb2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>152fc4671b2c91502eee65b9bd4bcbb2</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:30:31</sys_created_on>
+        <sys_id>552fc4671b2c91502eee65b9bd4bcbb4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-11-01 10:41:28</sys_updated_on>
+        <value>ServiceNow Worknotes: Issue cancelled from ServiceNow</value>
+        <variable display_value="Comment">1c49725edbe4d7005963ff041d9619aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>152fc4671b2c91502eee65b9bd4bcbb2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:30:32</sys_created_on>
+        <sys_id>5d2fc4671b2c91502eee65b9bd4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 10:30:32</sys_updated_on>
+        <value>629ad2bfdb1893005963ff041d961971</value>
+        <variable display_value="Connection Alias">429b92ec87400010ca8560e3d6cb0b90</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=152fc4671b2c91502eee65b9bd4bcbb2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_comment</field>
+        <id>152fc4671b2c91502eee65b9bd4bcbb2</id>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:30:31</sys_created_on>
+        <sys_id>5d2fc4671b2c91502eee65b9bd4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 10:30:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d449725edbe4d7005963ff041d961999</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_issue_id</field>
+        <id>152fc4671b2c91502eee65b9bd4bcbb2</id>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:30:31</sys_created_on>
+        <sys_id>112fc4671b2c91502eee65b9bd4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 10:30:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d449725edbe4d7005963ff041d961999</table>
+        <value>{{Updated_1.current.x_nhsd_nhs_jira_in_issue_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>152fc4671b2c91502eee65b9bd4bcbb2</id>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:30:31</sys_created_on>
+        <sys_id>d12fc4671b2c91502eee65b9bd4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 10:30:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d449725edbe4d7005963ff041d961999</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=152fc4671b2c91502eee65b9bd4bcbb2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=152fc4671b2c91502eee65b9bd4bcbb2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Transitions (Deprecated)">e77a65f4db9e5300868f5404ce9619c7</action_type>
+        <action_type_parent display_value="Look Up Transitions (Deprecated)">1fad1691dbbd9300868f5404ce961917</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</flow>
+        <order>4</order>
+        <parent_ui_id>7acc613f-24da-45a8-923c-dd0bdf82d373</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:17</sys_created_on>
+        <sys_id>4885878f1b2051502eee65b9bd4bcb21</sys_id>
+        <sys_mod_count>106</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:36</sys_updated_on>
+        <ui_id>7db94120-79ba-41f5-96b8-d9275a943e37</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4885878f1b2051502eee65b9bd4bcb21"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4885878f1b2051502eee65b9bd4bcb21</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:17</sys_created_on>
+        <sys_id>8c85878f1b2051502eee65b9bd4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:17</sys_updated_on>
+        <value>629ad2bfdb1893005963ff041d961971</value>
+        <variable display_value="Connection Alias">61119a6887400010ca8560e3d6cb0b1a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4885878f1b2051502eee65b9bd4bcb21"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>4885878f1b2051502eee65b9bd4bcb21</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:17</sys_created_on>
+        <sys_id>4885878f1b2051502eee65b9bd4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e77a65f4db9e5300868f5404ce9619c7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>issue_id</field>
+        <id>4885878f1b2051502eee65b9bd4bcb21</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:17</sys_created_on>
+        <sys_id>0c85878f1b2051502eee65b9bd4bcb22</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 11:36:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e77a65f4db9e5300868f5404ce9619c7</table>
+        <value>{{b9b56c6d-4bbe-442d-94bc-4b6411a6a258._}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4885878f1b2051502eee65b9bd4bcb21"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4885878f1b2051502eee65b9bd4bcb21"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Issue Status--Scoped">4e8d98271bac91502eee65b9bd4bcbd5</action_type>
+        <action_type_parent display_value="Get Issue Status--Scoped">8c6d54271bac91502eee65b9bd4bcbec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 11:36:23</sys_created_on>
+        <sys_id>c23e18a71bac91502eee65b9bd4bcb45</sys_id>
+        <sys_mod_count>76</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:36</sys_updated_on>
+        <ui_id>2dfad23d-fba2-44c4-be35-799d3a712cc6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c23e18a71bac91502eee65b9bd4bcb45"/>
+    <sys_element_mapping action="delete_multiple" query="id=c23e18a71bac91502eee65b9bd4bcb45"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>current_record</field>
+        <id>c23e18a71bac91502eee65b9bd4bcb45</id>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 11:36:23</sys_created_on>
+        <sys_id>4a3e18a71bac91502eee65b9bd4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 11:36:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4e8d98271bac91502eee65b9bd4bcbd5</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c23e18a71bac91502eee65b9bd4bcb45"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c23e18a71bac91502eee65b9bd4bcb45"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d775c38f1b2051502eee65b9bd4bcbf0^sys_idNOT INb775478f1b2051502eee65b9bd4bcbb1,bb75478f1b2051502eee65b9bd4bcbca,e12fc4671b2c91502eee65b9bd4bcbd1,f775478f1b2051502eee65b9bd4bcba0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7def49051b291910892d4046b04bcbea</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>7acc613f-24da-45a8-923c-dd0bdf82d373</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:16</sys_created_on>
+        <sys_id>b775478f1b2051502eee65b9bd4bcbb1</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:36</sys_updated_on>
+        <ui_id>efa19bc7-2d60-4a35-bc36-f96ab2a824e7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b775478f1b2051502eee65b9bd4bcbb1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b775478f1b2051502eee65b9bd4bcbb1</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:16</sys_created_on>
+        <sys_id>3775478f1b2051502eee65b9bd4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:16</sys_updated_on>
+        <value>LookUp Transition is Success</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b775478f1b2051502eee65b9bd4bcbb1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>b775478f1b2051502eee65b9bd4bcbb1</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:16</sys_created_on>
+        <sys_id>b375478f1b2051502eee65b9bd4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:16</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{7db94120-79ba-41f5-96b8-d9275a943e37.status}}=Success</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>b775478f1b2051502eee65b9bd4bcbb1</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:16</sys_created_on>
+        <sys_id>ff75478f1b2051502eee65b9bd4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:16</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b775478f1b2051502eee65b9bd4bcbb1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b775478f1b2051502eee65b9bd4bcbb1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">71ef49051b291910892d4046b04bcbf7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>7acc613f-24da-45a8-923c-dd0bdf82d373</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:16</sys_created_on>
+        <sys_id>bb75478f1b2051502eee65b9bd4bcbca</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:36</sys_updated_on>
+        <ui_id>aeb3950b-8827-4f30-8cac-d6be70a5220f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bb75478f1b2051502eee65b9bd4bcbca"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bb75478f1b2051502eee65b9bd4bcbca"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bb75478f1b2051502eee65b9bd4bcbca"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f9ef49051b291910892d4046b04bcbf2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>efa19bc7-2d60-4a35-bc36-f96ab2a824e7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+        <sys_created_on>2022-07-13 10:30:32</sys_created_on>
+        <sys_id>e12fc4671b2c91502eee65b9bd4bcbd1</sys_id>
+        <sys_mod_count>47</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:36</sys_updated_on>
+        <ui_id>e334e7ac-03ab-4430-a4e5-ad3fe80c58a5</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e12fc4671b2c91502eee65b9bd4bcbd1"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e12fc4671b2c91502eee65b9bd4bcbd1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e12fc4671b2c91502eee65b9bd4bcbd1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">39ef49051b291910892d4046b04bcbe1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Cascade JIRA Worknotes - Scoped">d775c38f1b2051502eee65b9bd4bcbf0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:16</sys_created_on>
+        <sys_id>f775478f1b2051502eee65b9bd4bcba0</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:36</sys_updated_on>
+        <ui_id>7acc613f-24da-45a8-923c-dd0bdf82d373</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f775478f1b2051502eee65b9bd4bcba0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f775478f1b2051502eee65b9bd4bcba0</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:16</sys_created_on>
+        <sys_id>bb75478f1b2051502eee65b9bd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:16</sys_updated_on>
+        <value>Issue Status is Cancel</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f775478f1b2051502eee65b9bd4bcba0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>f775478f1b2051502eee65b9bd4bcba0</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:16</sys_created_on>
+        <sys_id>3b75478f1b2051502eee65b9bd4bcbb0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+        <sys_updated_on>2022-07-13 11:36:23</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{2dfad23d-fba2-44c4-be35-799d3a712cc6.variable}}=Cancel</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>f775478f1b2051502eee65b9bd4bcba0</id>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:16</sys_created_on>
+        <sys_id>7775478f1b2051502eee65b9bd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:16</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f775478f1b2051502eee65b9bd4bcba0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f775478f1b2051502eee65b9bd4bcba0"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0^sys_idNOT IN3f75478f1b2051502eee65b9bd4bcb98,7375478f1b2051502eee65b9bd4bcb81,a375478f1b2051502eee65b9bd4bcb69"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:15</sys_created_on>
+        <sys_id>3f75478f1b2051502eee65b9bd4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0_table_name_en</sys_update_name>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:15</sys_created_on>
+        <sys_id>7375478f1b2051502eee65b9bd4bcb81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0_changed_fields_en</sys_update_name>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:15</sys_created_on>
+        <sys_id>a375478f1b2051502eee65b9bd4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0_current_en</sys_update_name>
+        <sys_updated_by>cog-Divya.RanjanMishra</sys_updated_by>
+        <sys_updated_on>2022-07-12 10:30:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d775c38f1b2051502eee65b9bd4bcbf0"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>7be48f0f1b2051502eee65b9bd4bcb5c</sys_id>
+        <latest_snapshot>d775c38f1b2051502eee65b9bd4bcbf0</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch3-10-26-2022_11-03-2022_2313.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=7be48f0f1b2051502eee65b9bd4bcb5c^sys_idNOT IN75854b8f1b2051502eee65b9bd4bcb12"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"75854b8f1b2051502eee65b9bd4bcb12","name":"plan","plan_signature":null}}</plan>
+        <plan_id>7be48f0f1b2051502eee65b9bd4bcb5c</plan_id>
+        <snapshot>12e2dcf41b339d102eee65b9bd4bcbbf</snapshot>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-07-12 10:30:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>75854b8f1b2051502eee65b9bd4bcb12</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-11-03 07:00:41</sys_updated_on>
+        <trigger display_value="">59ca9d7f1bba91502eee65b9bd4bcb31</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=7be48f0f1b2051502eee65b9bd4bcb5c"/>
+</record_update>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[onLoad();
+
+function onLoad() {
+    gel('mandateProject').style.display = "none";
+	gel('invalidProject').style.display = "none";
+    if ((gel('jiraProjectID').value != 'undefined') && (gel('jiraProjectID').value != '')) {
+        gel('jira_project').value = gel('jiraProjectID').value;
+    }
+}
+
+function checkvalue() {
+    gel('display_hidden.jira_project').value = gel('sys_display.jira_project').value;
+}
+
+function onSubmit() {
+    var selected_project = gel("jira_project").value;
+    var project_display = $('sys_display.jira_project').value;
+    //if (selected_project == '' || selected_project == 'undefined' || project_display == '') {
+    if (project_display == '') {
+        gel('mandateProject').style.display = "block";
+		gel('invalidProject').style.display = "none";
+        return false;
+    } else {
+        var ajax = new GlideAjax('x_nhsd_nhs_jira_in.getDefaultJIRAProjectScope');
+        ajax.addParam('sysparm_name', 'isValidProject');
+        ajax.addParam('sysparm_recordID', gel('sysID').value);
+        ajax.addParam('sysparm_projectName', project_display.toString());
+        ajax.getXMLWait();
+        var answer = ajax.getAnswer();
+        if (answer == "valid") {
+			var url = 'task.do?sys_id=' + gel('sysID').value;
+			g_navigation.open(url);
+			return false;
+        } else if (answer == "invalid") {
+			gel('mandateProject').style.display = "none";
+            gel('invalidProject').style.display = "block";
+            return false;
+        }
+    }
+}
+
+function onCancelDialog() {
+    GlideDialogWindow.get().destroy();
+    return false;
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_nhsd_nhs_jira_in_JIRA_Project_Scoped_Dialog_Box.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:ui_form>
+		<style>
+			td {
+			padding: 4px;
+			}
+
+			h4 {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			}
+		</style>
+
+		<input type="hidden" id="sysID" name="sysID" value="${sysparm_sysID}" />
+		<j:if test="${sysparm_project != 'undefined'}"><input type="hidden" id="jiraProject" name="jiraProject" value="${sysparm_project}" /></j:if>
+		<j:if test="${sysparm_projectID != 'undefined'}"><input type="hidden" id="jiraProjectID" name="jiraProjectID" value="${sysparm_projectID}" /></j:if>
+
+		<table>
+			<tr>
+				<td style="color:red;padding-top:11px;font-size:160%;">*</td>
+				<td style="font-size:115%">Project</td>
+				<j:if test="${sysparm_project !='undefined'}"><td style="width:300px;"><g:ui_reference table="u_nhs_data_lookup" query="u_active=true^u_nhs_domain=Jira" name="jira_project" id="jira_project" value="${sysparm_projectID}" displayvalue = "${sysparm_project}" onchange="checkvalue()"/></td></j:if>
+				<j:if test="${sysparm_project == 'undefined'}"><td style="width:300px;"><g:ui_reference table="u_nhs_data_lookup" query="u_active=true^u_nhs_domain=Jira" name="jira_project" id="jira_project" value="" displayvalue = "" onchange="checkvalue()"/></td></j:if>
+			</tr>			
+
+			<tr>
+				<td colspan ="3">
+					<div id='mandateProject' style="color:red;display:none">Project field is mandatory.</div>
+					<div id='invalidProject' style="color:red;display:none">Invalid Project entry. Choose a valid Project.</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan ="3"><div><j:if test="${sysparm_project == 'undefined'}"><div style="color:red;">NOTE: There is no project tagged against this Service. Choose manually</div></j:if></div></td>
+			</tr>
+
+			<tr>
+				<td align="right" colspan="3">			
+						<span align="right" class="modal-footer">
+							<g:dialog_button type="submit" id="cancel_popup" style="min-width: 5em;" onclick="return onCancelDialog()">Cancel</g:dialog_button>
+							<button type="submit" class="btn btn-primary" id="submit_popup" style="min-width: 5em;" onclick="return onSubmit()">Save</button>
+					</span>				
+				</td>
+			</tr>
+		</table>
+	</g:ui_form>
+</j:jelly>]]></html>
+        <name>JIRA_Project_Scoped_Dialog_Box</name>
+        <processing_script><![CDATA[// var url = 'task.do?sys_id=' + sysID;
+// response.sendRedirect(url);]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>cog-Divya.RanjanMishra</sys_created_by>
+        <sys_created_on>2022-06-20 10:28:01</sys_created_on>
+        <sys_id>ec02bd841b145550892d4046b04bcb72</sys_id>
+        <sys_mod_count>195</sys_mod_count>
+        <sys_name>JIRA_Project_Scoped_Dialog_Box</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_ui_page_ec02bd841b145550892d4046b04bcb72</sys_update_name>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-08-31 14:06:58</sys_updated_on>
+    </sys_ui_page>
+</record_update>

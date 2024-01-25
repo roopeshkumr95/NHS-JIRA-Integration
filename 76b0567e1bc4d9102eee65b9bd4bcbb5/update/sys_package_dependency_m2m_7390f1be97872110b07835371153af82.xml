@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">6b45cab7b8202010304ceb7d5057e7b3</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>cog-Akshita.Verma</sys_created_by>
+        <sys_created_on>2022-06-28 12:55:38</sys_created_on>
+        <sys_id>7390f1be97872110b07835371153af82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_updated_by>cog-Akshita.Verma</sys_updated_by>
+        <sys_updated_on>2022-06-28 12:55:38</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

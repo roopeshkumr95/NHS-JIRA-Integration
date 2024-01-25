@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_nhsd_nhs_jira_in.nhs.jira.status.values</name>
+        <read_roles/>
+        <suffix>nhs.jira.status.values</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>cog-roopesh.reddyb</sys_created_by>
+        <sys_created_on>2022-09-29 12:56:38</sys_created_on>
+        <sys_id>ac9702241b9e1d502eee65b9bd4bcb66</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_nhsd_nhs_jira_in.nhs.jira.status.values</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_properties_ac9702241b9e1d502eee65b9bd4bcb66</sys_update_name>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-09-29 13:42:52</sys_updated_on>
+        <type>string</type>
+        <value>Done,Completed</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=ac9702241b9e1d502eee65b9bd4bcb66"/>
+</record_update>

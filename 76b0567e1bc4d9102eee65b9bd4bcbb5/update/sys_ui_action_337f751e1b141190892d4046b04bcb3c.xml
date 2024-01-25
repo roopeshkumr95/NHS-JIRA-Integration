@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>cancel_jira_task_iisue</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>new x_nhsd_nhs_jira_in.getDefaultJIRAProjectScope().cancelJiraIssue(current)</condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Cancel JIRA Issue</name>
+        <onclick>cancelTaskJira()</onclick>
+        <order>100</order>
+        <script><![CDATA[function cancelTaskJira() {
+        var answer = confirm("Are you sure you want to cancel Jira issue?");
+        if (answer == true) {
+            //Call the UI Action and skip the 'onclick' function
+            gsftSubmit(null, g_form.getFormElement(), 'cancel_jira_task_iisue');
+        } else {
+            return false;
+        }
+    }
+
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if (typeof window == 'undefined')
+    updateInc();
+
+function updateInc() {
+    current.x_nhsd_nhs_jira_in_issue_status = "Cancel";
+	current.x_nhsd_nhs_jira_in_create_issue = "false";
+    current.update();
+    action.setRedirectURL(current);
+
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-27 11:35:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>337f751e1b141190892d4046b04bcb3c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Cancel JIRA Issue</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_ui_action_337f751e1b141190892d4046b04bcb3c</sys_update_name>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-08-23 13:25:48</sys_updated_on>
+        <table>task</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

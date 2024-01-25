@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD0c5de5209ada1d506d962540e838ae52</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>76b0567e1bc4d9102eee65b9bd4bcbb5</scope_name>
+        <serialized_content>{"FlowDesigner:FD0c5de5209ada1d506d962540e838ae52":{"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"items":[{"$76_items":{"field":"String","field.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"toString":"String","toString.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"To String\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"fromString":"String","fromString.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"From String\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"items.$field_facets":{"SimpleMapFacet":"{\"max_rows\":null,\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Items\",\"mandatory\":\"false\",\"child_name\":\"item\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"Item\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"64b0c573-cb82-4f0e-b3f8-f8dcfbb46c6a\"}"}},"FlowDesigner:FD0c5de5209ada1d506d962540e838ae52.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Issue Change Log\",\"mandatory\":\"false\",\"uiUniqueId\":\"251f478a-937f-426a-b3d5-683f27829e35\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0c5de5209ada1d506d962540e838ae52\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"9\",\"max_length\":\"8000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>cog-roopesh.reddyb</sys_created_by>
+        <sys_created_on>2022-09-29 09:30:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cc5de5201bda1d502eee65b9bd4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD0c5de5209ada1d506d962540e838ae52</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_complex_object_cc5de5201bda1d502eee65b9bd4bcb52</sys_update_name>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-09-29 09:30:03</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

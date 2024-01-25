@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field>action_status</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onSubmitWithNoSearchIssue - Scoped</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+
+	if((g_form.getValue('x_nhsd_nhs_jira_in_search_issue') === '' && g_form.getValue('x_nhsd_nhs_jira_in_create_issue') == "false") || (g_form.getValue('x_nhsd_nhs_jira_in_issue_id') == '' && g_form.getValue('x_nhsd_nhs_jira_in_issue_key') == '' && g_form.getValue('x_nhsd_nhs_jira_in_issue_status') == '' && g_form.getValue('x_nhsd_nhs_jira_in_issue_url') == '')){
+		g_form.setValue('x_nhsd_nhs_jira_in_create_issue',false);
+		g_form.setValue('x_nhsd_nhs_jira_in_show_jira_tab',false);
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-21 12:14:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5f039f181b50d550892d4046b04bcbad</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>onSubmitWithNoSearchIssue - Scoped</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_script_client_5f039f181b50d550892d4046b04bcbad</sys_update_name>
+        <sys_updated_by>cog-akshita.verma</sys_updated_by>
+        <sys_updated_on>2022-09-27 11:15:44</sys_updated_on>
+        <table>task</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

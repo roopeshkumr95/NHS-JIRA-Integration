@@ -1,0 +1,1774 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>80412e9f1bc48550892d4046b04bcb29</copied_from>
+        <copied_from_name>Task_JIRA_record_Update</copied_from_name>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>copy_of_task_jira_record_update__scoped</internal_name>
+        <label_cache>[{"name":"{{action.currentrecord}}","label":"action➛currentRecord","type":"action","ref":"","reference_display":"Task","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.current_record}}","label":"action➛current Record","type":"action","ref":"","reference_display":"Task","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c1cd6d7-7465-4df9-be10-0874814bae60].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c1cd6d7-7465-4df9-be10-0874814bae60].additionalfields}}","label":"step➛Script step➛additionalFields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2206c8dd-ce14-47c3-90d5-1fbf1baa6455].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2206c8dd-ce14-47c3-90d5-1fbf1baa6455].additionalfields}}","label":"step➛Script step➛additionalFields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[d2cefcf4-54a1-43ae-849c-cd07de45b560].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d2cefcf4-54a1-43ae-849c-cd07de45b560].issue_id}}","label":"step➛Script step➛Issue ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[d2cefcf4-54a1-43ae-849c-cd07de45b560].issueid}}","label":"step➛Script step➛Issue ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ed96719c-9bfd-4d65-bcf7-bc1ff45818ef].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ed96719c-9bfd-4d65-bcf7-bc1ff45818ef].issue_status}}","label":"step➛Script step➛issue Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b1864a96-2708-47b2-8460-4a9ac8c34f6a"}},{"name":"{{step[ed96719c-9bfd-4d65-bcf7-bc1ff45818ef].__step_status__}}","label":"step➛Script step➛Step Status","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[666ec461-3720-498b-b5bd-73f6f10eb0ba].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[666ec461-3720-498b-b5bd-73f6f10eb0ba].issue_status}}","label":"step➛Script step➛issue status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>e333003a1bd09190892d4046b04bcb9f</master_snapshot>
+        <name>Task_JIRA_Record_Update</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a46200f61bd09190892d4046b04bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Task_JIRA_Record_Update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_a46200f61bd09190892d4046b04bcbe2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-30 12:29:21</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=a46200f61bd09190892d4046b04bcbe2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a46200f61bd09190892d4046b04bcbe2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>a46200f61bd09190892d4046b04bcbe2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>416240f61bd09190892d4046b04bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:39</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">456240f61bd09190892d4046b04bcb26</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>a46200f61bd09190892d4046b04bcbe2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>4d6240f61bd09190892d4046b04bcb5c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-11-23 12:26:43</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDf86240f69bd0919016b092fde2e7f81a":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDf86240f69bd0919016b092fde2e7f81a.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"9f23eaf2-d210-4e97-a655-2c2f0e9bcffc\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDf86240f69bd0919016b092fde2e7f81a\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">f46240f61bd09190892d4046b04bcb1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_a46200f61bd09190892d4046b04bcbe2^id=a46200f61bd09190892d4046b04bcbe2"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=a46200f61bd09190892d4046b04bcbe2^sys_idNOT INbc6200f61bd09190892d4046b04bcbff"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Task_JIRA_Record_Update">a46200f61bd09190892d4046b04bcbe2</action>
+        <cid>ce6586d3-ec17-4978-8367-a7275d9af357</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:38</sys_created_on>
+        <sys_id>bc6200f61bd09190892d4046b04bcbff</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-11-23 12:26:42</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bc6200f61bd09190892d4046b04bcbff"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bc6200f61bd09190892d4046b04bcbff</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>706240f61bd09190892d4046b04bcb17</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-11-23 12:26:42</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+ // ... App Code ...
+  var payload = JSON.parse(inputs.responsePayload);
+  var issueType = payload.issue.fields.issuetype.name;
+  var tableName = inputs.taskRecord.sys_class_name;
+  var record = inputs.taskRecord.number;
+  var dateTime = new GlideDateTime().getDisplayValue();
+  var statusProp = gs.getProperty('x_nhsd_nhs_jira_in.nhs.jira.status.values');
+  var gr = new GlideRecord(tableName);
+  gr.addQuery("x_nhsd_nhs_jira_in_issue_id",payload.issue.id);
+  gr.query();
+  while(gr.next()){ 
+
+    if((tableName == 'incident_task') &amp;&amp; (statusProp.indexOf(payload.issue.fields.status.name) !=-1)){
+      gr.u_resolution_notes = 'Jira Issue key '+gr.x_nhsd_nhs_jira_in_issue_key+' is marked Done at '+dateTime+' by '+payload.user.displayName;
+      gr.work_notes=inputs.taskRecord.number+' resolved/closed automatically.';
+      gr.state = 5; 
+
+    }
+    else if((tableName == 'problem_task') &amp;&amp; (statusProp.indexOf(payload.issue.fields.status.name) !=-1)){
+      gr.close_notes = 'Jira Issue key '+gr.x_nhsd_nhs_jira_in_issue_key+' is marked Done at '+dateTime+' by '+payload.user.displayName;
+      gr.work_notes=inputs.taskRecord.number+' resolved/closed automatically.';
+      gr.needs_attention = true;
+      gr.state = 157; 
+      var gr1 = new GlideRecord('problem');
+      gr1.get(gr.problem);
+      gr1.needs_attention = true;
+      gr1.update();
+
+    }
+    else if((tableName == 'sc_task') &amp;&amp; (statusProp.indexOf(payload.issue.fields.status.name) !=-1)){
+
+      gr.u_resolution_code = '1';
+      gr.needs_attention = true;
+      gr.work_notes = inputs.taskRecord.number+' resolved/closed automatically.';
+      gr.u_resolution_notes = 'Jira Issue key '+gr.x_nhsd_nhs_jira_in_issue_key+' is marked Done at '+dateTime+' by '+payload.user.displayName;
+      gr.state = 5;
+      var gr1 = new GlideRecord('sc_req_item');
+      gr1.get(gr.request_item);
+      gr1.needs_attention = true;
+      gr1.update();
+
+    }
+
+    gr.x_nhsd_nhs_jira_in_issue_status = payload.issue.fields.status.name;
+    var newProjectKey = payload.issue.key.toString();
+    //Update Issue Key and Issue URL
+    if(newProjectKey){ 
+      var url = gr.x_nhsd_nhs_jira_in_issue_url.toString();
+      var issueKey = gr.x_nhsd_nhs_jira_in_issue_key.toString();
+      var newURL = url.replaceAll(issueKey,newProjectKey);
+      gr.x_nhsd_nhs_jira_in_issue_url = newURL;
+    }
+    //Update Worklog and comments
+    var cmt="";
+    var hasComment = payload.hasOwnProperty("comment");
+    if(hasComment &amp;&amp; hasComment != undefined){    
+      cmt = payload.comment.body;
+      if(cmt.indexOf("ServiceNow Worknotes") == -1){
+        var userName = payload.comment.author.displayName;
+        gr.work_notes = "Jira comment added by " + userName + " - " + cmt;
+      }
+    }
+    var projectName = payload.issue.fields.project.name;
+    var oldprojectKey = gr.x_nhsd_nhs_jira_in_issue_key;
+    var oldprojectId = oldprojectKey.split('-');
+
+    var gr1 = new GlideRecord('u_nhs_data_lookup');
+    gr1.addEncodedQuery('u_key='+oldprojectId[0]);
+    gr1.query();
+    if(gr1.next()){
+      var oldProjectName = gr1.u_name;
+    }
+
+    if(projectName != oldProjectName){//for projectName         
+      gr.work_notes = " JIRA Project Changed :: "+projectName +" was "+oldProjectName;
+    }
+
+    var journalEnteries = new GlideRecord('sys_journal_field'); journalEnteries.addEncodedQuery('name='+tableName+'^element=work_notes^element_id='+inputs.taskRecord.sys_id+'^valueSTARTSWITHIssue Type has been changed in Jira to');
+    journalEnteries.orderByDesc('sys_created_on');
+    journalEnteries.query();
+
+    if(journalEnteries.next()){
+      var worknote = journalEnteries.value;
+      var oldIssueType = worknote.substring(42, worknote.length);
+
+      if(oldIssueType != '' &amp;&amp; oldIssueType != issueType){
+        gr.work_notes = 'Issue Type has been changed in Jira to :: '+issueType;
+      }
+    }
+    else{
+      var table = '';
+      if(tableName == 'incident' || tableName == 'incident_task')
+        table = 'incident';
+      else if(tableName == 'problem' || tableName == 'problem_task')
+        table = 'problem';
+      else if(tableName == 'sc_req_item' || tableName == 'sn_customerservice_case' || tableName == 'sc_task')
+        table = 'request';
+      if(issueType.toLowerCase().indexOf(table) &lt; 0)
+        gr.work_notes = 'Issue Type has been changed in Jira to :: '+issueType;
+    }
+    gr.x_nhsd_nhs_jira_in_issue_key = payload.issue.key;
+    gr.update();
+
+  }
+
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bc6200f61bd09190892d4046b04bcbff</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>bc6240f61bd09190892d4046b04bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:39</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bc6200f61bd09190892d4046b04bcbff"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>responsePayload</field>
+        <id>bc6200f61bd09190892d4046b04bcbff</id>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>306240f61bd09190892d4046b04bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:39</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_bc6200f61bd09190892d4046b04bcbff</table>
+        <value>{{action.payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>taskRecord</field>
+        <id>bc6200f61bd09190892d4046b04bcbff</id>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>7c6240f61bd09190892d4046b04bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:39</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_bc6200f61bd09190892d4046b04bcbff</table>
+        <value>{{action.currentrecord}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=bc6200f61bd09190892d4046b04bcbff"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=bc6200f61bd09190892d4046b04bcbff^sys_idNOT IN786240f61bd09190892d4046b04bcb03,f86240f61bd09190892d4046b04bcb0b"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>taskRecord</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">bc6200f61bd09190892d4046b04bcbff</model>
+        <model_id>bc6200f61bd09190892d4046b04bcbff</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_bc6200f61bd09190892d4046b04bcbff</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Task" name="task">task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:38</sys_created_on>
+        <sys_id>786240f61bd09190892d4046b04bcb03</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>responsePayload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">bc6200f61bd09190892d4046b04bcbff</model>
+        <model_id>bc6200f61bd09190892d4046b04bcbff</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_bc6200f61bd09190892d4046b04bcbff</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:38</sys_created_on>
+        <sys_id>f86240f61bd09190892d4046b04bcb0b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=bc6200f61bd09190892d4046b04bcbff"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bc6200f61bd09190892d4046b04bcbff"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_bc6200f61bd09190892d4046b04bcbff"/>
+    <sys_hub_action_input action="delete_multiple" query="model=a46200f61bd09190892d4046b04bcbe2^sys_idNOT IN7c6200f61bd09190892d4046b04bcbf6,b86200f61bd09190892d4046b04bcbe8"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ff7b1c20-efac-4595-b014-fa83e8026a12</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>payload</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Task_JIRA_Record_Update">a46200f61bd09190892d4046b04bcbe2</model>
+        <model_id>a46200f61bd09190892d4046b04bcbe2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a46200f61bd09190892d4046b04bcbe2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:38</sys_created_on>
+        <sys_id>7c6200f61bd09190892d4046b04bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7c6200f61bd09190892d4046b04bcbf6"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f73e067c-4cd1-4864-8b0a-74fa883995af</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>currentrecord</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>currentRecord</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Task_JIRA_Record_Update">a46200f61bd09190892d4046b04bcbe2</model>
+        <model_id>a46200f61bd09190892d4046b04bcbe2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a46200f61bd09190892d4046b04bcbe2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Task" name="task">task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:38</sys_created_on>
+        <sys_id>b86200f61bd09190892d4046b04bcbe8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b86200f61bd09190892d4046b04bcbe8"/>
+    <sys_hub_action_output action="delete_multiple" query="model=a46200f61bd09190892d4046b04bcbe2^sys_idNOT IN456240f61bd09190892d4046b04bcb26,f46240f61bd09190892d4046b04bcb1d"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=067ebbcf-553b-46e4-9816-ab9560918ee4,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Task_JIRA_Record_Update">a46200f61bd09190892d4046b04bcbe2</model>
+        <model_id>a46200f61bd09190892d4046b04bcbe2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_a46200f61bd09190892d4046b04bcbe2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>456240f61bd09190892d4046b04bcb26</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=456240f61bd09190892d4046b04bcb26"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=456240f61bd09190892d4046b04bcb26"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDf86240f69bd0919016b092fde2e7f81a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=9f23eaf2-d210-4e97-a655-2c2f0e9bcffc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Task_JIRA_Record_Update">a46200f61bd09190892d4046b04bcbe2</model>
+        <model_id>a46200f61bd09190892d4046b04bcbe2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_a46200f61bd09190892d4046b04bcbe2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>f46240f61bd09190892d4046b04bcb1d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f46240f61bd09190892d4046b04bcb1d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f46240f61bd09190892d4046b04bcb1d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a46200f61bd09190892d4046b04bcbe2"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=a46200f61bd09190892d4046b04bcbe2^sys_idNOT IN8d6240f61bd09190892d4046b04bcb36"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Task_JIRA_Record_Update">a46200f61bd09190892d4046b04bcbe2</action_type_id>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>8d6240f61bd09190892d4046b04bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:39</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=8d6240f61bd09190892d4046b04bcb36"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a46200f61bd09190892d4046b04bcbe2^sys_idNOT INb46200f61bd09190892d4046b04bcbf5,fc6200f61bd09190892d4046b04bcbfc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>currentrecord</element>
+        <help/>
+        <hint/>
+        <label>currentRecord</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a46200f61bd09190892d4046b04bcbe2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:38</sys_created_on>
+        <sys_id>b46200f61bd09190892d4046b04bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>currentRecord</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_a46200f61bd09190892d4046b04bcbe2_currentrecord_en</sys_update_name>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>payload</element>
+        <help/>
+        <hint/>
+        <label>payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a46200f61bd09190892d4046b04bcbe2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:38</sys_created_on>
+        <sys_id>fc6200f61bd09190892d4046b04bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>payload</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_a46200f61bd09190892d4046b04bcbe2_payload_en</sys_update_name>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_a46200f61bd09190892d4046b04bcbe2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_a46200f61bd09190892d4046b04bcbe2^sys_idNOT INbc6240f61bd09190892d4046b04bcb24,c96240f61bd09190892d4046b04bcb31"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a46200f61bd09190892d4046b04bcbe2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>bc6240f61bd09190892d4046b04bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_a46200f61bd09190892d4046b04bcbe2___action_status___en</sys_update_name>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a46200f61bd09190892d4046b04bcbe2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:23:39</sys_created_on>
+        <sys_id>c96240f61bd09190892d4046b04bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_a46200f61bd09190892d4046b04bcbe2___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:23:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_a46200f61bd09190892d4046b04bcbe2"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=a46200f61bd09190892d4046b04bcbe2^sys_idNOT IN4043403a1bd09190892d4046b04bcb5b"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Task_JIRA_Record_Update">a46200f61bd09190892d4046b04bcbe2</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"4043403a1bd09190892d4046b04bcb5b","name":"plan","plan_signature":null}}</plan>
+        <snapshot>993561d61b5f51902eee65b9bd4bcb6f</snapshot>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4043403a1bd09190892d4046b04bcb5b</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-11-23 12:26:49</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>copy_of_task_jira_record_update__scoped</internal_name>
+        <label_cache>[{"name":"{{action.currentrecord}}","label":"action➛currentRecord","type":"action","ref":"","reference_display":"Task","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.current_record}}","label":"action➛current Record","type":"action","ref":"","reference_display":"Task","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c1cd6d7-7465-4df9-be10-0874814bae60].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3c1cd6d7-7465-4df9-be10-0874814bae60].additionalfields}}","label":"step➛Script step➛additionalFields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2206c8dd-ce14-47c3-90d5-1fbf1baa6455].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2206c8dd-ce14-47c3-90d5-1fbf1baa6455].additionalfields}}","label":"step➛Script step➛additionalFields","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[d2cefcf4-54a1-43ae-849c-cd07de45b560].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d2cefcf4-54a1-43ae-849c-cd07de45b560].issue_id}}","label":"step➛Script step➛Issue ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[d2cefcf4-54a1-43ae-849c-cd07de45b560].issueid}}","label":"step➛Script step➛Issue ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ed96719c-9bfd-4d65-bcf7-bc1ff45818ef].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ed96719c-9bfd-4d65-bcf7-bc1ff45818ef].issue_status}}","label":"step➛Script step➛issue Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b1864a96-2708-47b2-8460-4a9ac8c34f6a"}},{"name":"{{step[ed96719c-9bfd-4d65-bcf7-bc1ff45818ef].__step_status__}}","label":"step➛Script step➛Step Status","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[666ec461-3720-498b-b5bd-73f6f10eb0ba].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[666ec461-3720-498b-b5bd-73f6f10eb0ba].issue_status}}","label":"step➛Script step➛issue status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>Task_JIRA_Record_Update</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Task_JIRA_Record_Update">a46200f61bd09190892d4046b04bcbe2</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e333003a1bd09190892d4046b04bcb9f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-11-23 12:26:47</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e333003a1bd09190892d4046b04bcb9f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e333003a1bd09190892d4046b04bcb9f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>e333003a1bd09190892d4046b04bcb9f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:24</sys_created_on>
+        <sys_id>7b33003a1bd09190892d4046b04bcbf7</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-11-23 12:26:48</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDbb33003a93d09190e0b04af3f05c65d1":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDbb33003a93d09190e0b04af3f05c65d1.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"9f23eaf2-d210-4e97-a655-2c2f0e9bcffc\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDbb33003a93d09190e0b04af3f05c65d1\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">7333003a1bd09190892d4046b04bcbd4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>e333003a1bd09190892d4046b04bcb9f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:24</sys_created_on>
+        <sys_id>b733003a1bd09190892d4046b04bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:24</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">b733003a1bd09190892d4046b04bcbdc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_e333003a1bd09190892d4046b04bcb9f^id=e333003a1bd09190892d4046b04bcb9f"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=e333003a1bd09190892d4046b04bcb9f^sys_idNOT INa333003a1bd09190892d4046b04bcbb9"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Task_JIRA_Record_Update">e333003a1bd09190892d4046b04bcb9f</action>
+        <cid>ce6586d3-ec17-4978-8367-a7275d9af357</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>a333003a1bd09190892d4046b04bcbb9</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-11-23 12:26:48</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a333003a1bd09190892d4046b04bcbb9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a333003a1bd09190892d4046b04bcbb9</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>3733003a1bd09190892d4046b04bcbce</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_updated_by>cog-divya.ranjanmishra</sys_updated_by>
+        <sys_updated_on>2022-11-23 12:26:48</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+ // ... App Code ...
+  var payload = JSON.parse(inputs.responsePayload);
+  var issueType = payload.issue.fields.issuetype.name;
+  var tableName = inputs.taskRecord.sys_class_name;
+  var record = inputs.taskRecord.number;
+  var dateTime = new GlideDateTime().getDisplayValue();
+  var statusProp = gs.getProperty('x_nhsd_nhs_jira_in.nhs.jira.status.values');
+  var gr = new GlideRecord(tableName);
+  gr.addQuery("x_nhsd_nhs_jira_in_issue_id",payload.issue.id);
+  gr.query();
+  while(gr.next()){ 
+
+    if((tableName == 'incident_task') &amp;&amp; (statusProp.indexOf(payload.issue.fields.status.name) !=-1)){
+      gr.u_resolution_notes = 'Jira Issue key '+gr.x_nhsd_nhs_jira_in_issue_key+' is marked Done at '+dateTime+' by '+payload.user.displayName;
+      gr.work_notes=inputs.taskRecord.number+' resolved/closed automatically.';
+      gr.state = 5; 
+
+    }
+    else if((tableName == 'problem_task') &amp;&amp; (statusProp.indexOf(payload.issue.fields.status.name) !=-1)){
+      gr.close_notes = 'Jira Issue key '+gr.x_nhsd_nhs_jira_in_issue_key+' is marked Done at '+dateTime+' by '+payload.user.displayName;
+      gr.work_notes=inputs.taskRecord.number+' resolved/closed automatically.';
+      gr.needs_attention = true;
+      gr.state = 157; 
+      var gr1 = new GlideRecord('problem');
+      gr1.get(gr.problem);
+      gr1.needs_attention = true;
+      gr1.update();
+
+    }
+    else if((tableName == 'sc_task') &amp;&amp; (statusProp.indexOf(payload.issue.fields.status.name) !=-1)){
+
+      gr.u_resolution_code = '1';
+      gr.needs_attention = true;
+      gr.work_notes = inputs.taskRecord.number+' resolved/closed automatically.';
+      gr.u_resolution_notes = 'Jira Issue key '+gr.x_nhsd_nhs_jira_in_issue_key+' is marked Done at '+dateTime+' by '+payload.user.displayName;
+      gr.state = 5;
+      var gr1 = new GlideRecord('sc_req_item');
+      gr1.get(gr.request_item);
+      gr1.needs_attention = true;
+      gr1.update();
+
+    }
+
+    gr.x_nhsd_nhs_jira_in_issue_status = payload.issue.fields.status.name;
+    var newProjectKey = payload.issue.key.toString();
+    //Update Issue Key and Issue URL
+    if(newProjectKey){ 
+      var url = gr.x_nhsd_nhs_jira_in_issue_url.toString();
+      var issueKey = gr.x_nhsd_nhs_jira_in_issue_key.toString();
+      var newURL = url.replaceAll(issueKey,newProjectKey);
+      gr.x_nhsd_nhs_jira_in_issue_url = newURL;
+    }
+    //Update Worklog and comments
+    var cmt="";
+    var hasComment = payload.hasOwnProperty("comment");
+    if(hasComment &amp;&amp; hasComment != undefined){    
+      cmt = payload.comment.body;
+      if(cmt.indexOf("ServiceNow Worknotes") == -1){
+        var userName = payload.comment.author.displayName;
+        gr.work_notes = "Jira comment added by " + userName + " - " + cmt;
+      }
+    }
+    var projectName = payload.issue.fields.project.name;
+    var oldprojectKey = gr.x_nhsd_nhs_jira_in_issue_key;
+    var oldprojectId = oldprojectKey.split('-');
+
+    var gr1 = new GlideRecord('u_nhs_data_lookup');
+    gr1.addEncodedQuery('u_key='+oldprojectId[0]);
+    gr1.query();
+    if(gr1.next()){
+      var oldProjectName = gr1.u_name;
+    }
+
+    if(projectName != oldProjectName){//for projectName         
+      gr.work_notes = " JIRA Project Changed :: "+projectName +" was "+oldProjectName;
+    }
+
+    var journalEnteries = new GlideRecord('sys_journal_field'); journalEnteries.addEncodedQuery('name='+tableName+'^element=work_notes^element_id='+inputs.taskRecord.sys_id+'^valueSTARTSWITHIssue Type has been changed in Jira to');
+    journalEnteries.orderByDesc('sys_created_on');
+    journalEnteries.query();
+
+    if(journalEnteries.next()){
+      var worknote = journalEnteries.value;
+      var oldIssueType = worknote.substring(42, worknote.length);
+
+      if(oldIssueType != '' &amp;&amp; oldIssueType != issueType){
+        gr.work_notes = 'Issue Type has been changed in Jira to :: '+issueType;
+      }
+    }
+    else{
+      var table = '';
+      if(tableName == 'incident' || tableName == 'incident_task')
+        table = 'incident';
+      else if(tableName == 'problem' || tableName == 'problem_task')
+        table = 'problem';
+      else if(tableName == 'sc_req_item' || tableName == 'sn_customerservice_case' || tableName == 'sc_task')
+        table = 'request';
+      if(issueType.toLowerCase().indexOf(table) &lt; 0)
+        gr.work_notes = 'Issue Type has been changed in Jira to :: '+issueType;
+    }
+    gr.x_nhsd_nhs_jira_in_issue_key = payload.issue.key;
+    gr.update();
+
+  }
+
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a333003a1bd09190892d4046b04bcbb9</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>7333003a1bd09190892d4046b04bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a333003a1bd09190892d4046b04bcbb9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>responsePayload</field>
+        <id>a333003a1bd09190892d4046b04bcbb9</id>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>7333003a1bd09190892d4046b04bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_a333003a1bd09190892d4046b04bcbb9</table>
+        <value>{{action.payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>taskRecord</field>
+        <id>a333003a1bd09190892d4046b04bcbb9</id>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>bf33003a1bd09190892d4046b04bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_a333003a1bd09190892d4046b04bcbb9</table>
+        <value>{{action.currentrecord}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=a333003a1bd09190892d4046b04bcbb9"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=a333003a1bd09190892d4046b04bcbb9^sys_idNOT IN7f33003a1bd09190892d4046b04bcbc3,a733003a1bd09190892d4046b04bcbbc"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>responsePayload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>responsePayload</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">a333003a1bd09190892d4046b04bcbb9</model>
+        <model_id>a333003a1bd09190892d4046b04bcbb9</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_a333003a1bd09190892d4046b04bcbb9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>7f33003a1bd09190892d4046b04bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>taskRecord</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>taskRecord</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">a333003a1bd09190892d4046b04bcbb9</model>
+        <model_id>a333003a1bd09190892d4046b04bcbb9</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_a333003a1bd09190892d4046b04bcbb9</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Task" name="task">task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>a733003a1bd09190892d4046b04bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=a333003a1bd09190892d4046b04bcbb9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a333003a1bd09190892d4046b04bcbb9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_a333003a1bd09190892d4046b04bcbb9"/>
+    <sys_hub_action_input action="delete_multiple" query="model=e333003a1bd09190892d4046b04bcb9f^sys_idNOT INa333003a1bd09190892d4046b04bcba3,a333003a1bd09190892d4046b04bcbb0"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f73e067c-4cd1-4864-8b0a-74fa883995af</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>currentrecord</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>currentRecord</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Task_JIRA_Record_Update">e333003a1bd09190892d4046b04bcb9f</model>
+        <model_id>e333003a1bd09190892d4046b04bcb9f</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e333003a1bd09190892d4046b04bcb9f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Task" name="task">task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>a333003a1bd09190892d4046b04bcba3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a333003a1bd09190892d4046b04bcba3"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ff7b1c20-efac-4595-b014-fa83e8026a12</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>payload</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Task_JIRA_Record_Update">e333003a1bd09190892d4046b04bcb9f</model>
+        <model_id>e333003a1bd09190892d4046b04bcb9f</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e333003a1bd09190892d4046b04bcb9f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>a333003a1bd09190892d4046b04bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a333003a1bd09190892d4046b04bcbb0"/>
+    <sys_hub_action_output action="delete_multiple" query="model=e333003a1bd09190892d4046b04bcb9f^sys_idNOT IN7333003a1bd09190892d4046b04bcbd4,b733003a1bd09190892d4046b04bcbdc"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDbb33003a93d09190e0b04af3f05c65d1,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=9f23eaf2-d210-4e97-a655-2c2f0e9bcffc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Task_JIRA_Record_Update">e333003a1bd09190892d4046b04bcb9f</model>
+        <model_id>e333003a1bd09190892d4046b04bcb9f</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e333003a1bd09190892d4046b04bcb9f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>7333003a1bd09190892d4046b04bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7333003a1bd09190892d4046b04bcbd4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7333003a1bd09190892d4046b04bcbd4"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=067ebbcf-553b-46e4-9816-ab9560918ee4,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Task_JIRA_Record_Update">e333003a1bd09190892d4046b04bcb9f</model>
+        <model_id>e333003a1bd09190892d4046b04bcb9f</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e333003a1bd09190892d4046b04bcb9f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>b733003a1bd09190892d4046b04bcbdc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b733003a1bd09190892d4046b04bcbdc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b733003a1bd09190892d4046b04bcbdc"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e333003a1bd09190892d4046b04bcb9f"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=e333003a1bd09190892d4046b04bcb9f^sys_idNOT IN7733003a1bd09190892d4046b04bcbf9"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Task_JIRA_Record_Update">e333003a1bd09190892d4046b04bcb9f</action_type_id>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:24</sys_created_on>
+        <sys_id>7733003a1bd09190892d4046b04bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:24</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=7733003a1bd09190892d4046b04bcbf9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e333003a1bd09190892d4046b04bcb9f^sys_idNOT IN2733003a1bd09190892d4046b04bcbb6,eb33003a1bd09190892d4046b04bcbae"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>payload</element>
+        <help/>
+        <hint/>
+        <label>payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e333003a1bd09190892d4046b04bcb9f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>2733003a1bd09190892d4046b04bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>payload</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e333003a1bd09190892d4046b04bcb9f_payload_en</sys_update_name>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>currentrecord</element>
+        <help/>
+        <hint/>
+        <label>currentRecord</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e333003a1bd09190892d4046b04bcb9f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>eb33003a1bd09190892d4046b04bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>currentRecord</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e333003a1bd09190892d4046b04bcb9f_currentrecord_en</sys_update_name>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_e333003a1bd09190892d4046b04bcb9f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_e333003a1bd09190892d4046b04bcb9f^sys_idNOT IN7733003a1bd09190892d4046b04bcbe7,ff33003a1bd09190892d4046b04bcbda"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e333003a1bd09190892d4046b04bcb9f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:24</sys_created_on>
+        <sys_id>7733003a1bd09190892d4046b04bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e333003a1bd09190892d4046b04bcb9f___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e333003a1bd09190892d4046b04bcb9f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 15:27:23</sys_created_on>
+        <sys_id>ff33003a1bd09190892d4046b04bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e333003a1bd09190892d4046b04bcb9f___action_status___en</sys_update_name>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 15:27:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_e333003a1bd09190892d4046b04bcb9f"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>a46200f61bd09190892d4046b04bcbe2</sys_id>
+        <latest_snapshot>e333003a1bd09190892d4046b04bcb9f</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch7a-09-20-2022_10-04-2022_1309.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

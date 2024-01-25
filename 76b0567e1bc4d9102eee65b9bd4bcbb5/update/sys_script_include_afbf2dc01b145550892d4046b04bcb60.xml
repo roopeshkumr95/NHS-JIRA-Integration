@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_nhsd_nhs_jira_in.getDefaultJIRAProjectScope</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>This script include is to fetch the default JIRA project information on the applicable Service, Service Offering or Application.&#13;
+Rules -&#13;
+1. Check first if the Application table contains JIRA Project Information.&#13;
+2. If above is not present, check the Service Offering table JIRA Project Information.&#13;
+3. If above is not present, check the Service table JIRA Project Information.</description>
+        <name>getDefaultJIRAProjectScope</name>
+        <script><![CDATA[var getDefaultJIRAProjectScope = Class.create();
+getDefaultJIRAProjectScope.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getDefaultJIRATaskProject: function() {
+        var jiraProject = [];
+        var jiraProjectID = [];
+        var table = this.getParameter('sysparm_tablename');
+        var sys_id = this.getParameter('sysparm_sysID');
+        var getJiraProject = new GlideRecord(table);
+        getJiraProject.addQuery("sys_id", sys_id);
+        getJiraProject.query();
+        if (getJiraProject.next()) {
+
+            if (global.JSUtil.notNil(getJiraProject.business_service.u_jira_project_name)) {
+                jiraProject.push(getJiraProject.business_service.u_jira_project_name.getDisplayValue());
+                jiraProjectID.push(getJiraProject.business_service.u_jira_project_name);
+            }
+            if (global.JSUtil.notNil(getJiraProject.service_offering.u_jira_project_name)) {
+                jiraProject.push(getJiraProject.service_offering.u_jira_project_name.getDisplayValue());
+                jiraProjectID.push(getJiraProject.service_offering.u_jira_project_name);
+            }
+            if (global.JSUtil.notNil(getJiraProject.cmdb_ci.u_jira_project_name)) {
+                jiraProject.push(getJiraProject.cmdb_ci.u_jira_project_name.getDisplayValue());
+                jiraProjectID.push(getJiraProject.cmdb_ci.u_jira_project_name);
+            }
+            return jiraProject.pop() + "," + jiraProjectID.pop();
+        }
+    },
+	jiraConditionCheck: function(current){
+		if(!current.isNewRecord() && current.active == true && (current.sys_class_name == 'incident' || current.sys_class_name == 'problem' || current.sys_class_name == 'sc_req_item' || current.sys_class_name == 'sn_customerservice_case'|| current.sys_class_name == 'incident_task' || current.sys_class_name == 'problem_task' || current.sys_class_name == 'sc_task')){
+			return true;
+
+		}else{
+			return false;
+		}
+	},
+    getJiraProjectDetails: function() {
+        var issueId = this.getParameter('sysparm_issueKey');
+        var gr = new GlideRecord('u_nhs_data_lookup');
+        gr.addEncodedQuery('u_key=' + issueId);
+        gr.query();
+        if (gr.next()) {
+            return gr.sys_id;
+        }
+    },
+
+    /*This condition is used in UI Action "Reset JIRA Information" to evaluate the visibility of the button*/
+    resetJIRACondition: function(current) {
+
+        if ((current.getTableName() == 'incident' || current.getTableName() == 'problem' || current.getTableName() == 'sc_req_item' || current.getTableName() == 'sn_customerservice_case') && (current.getValue('x_nhsd_nhs_jira_in_create_issue') == false || current.getValue('x_nhsd_nhs_jira_in_issue_status') == 'Error' || global.JSUtil.notNil(current.getValue('x_nhsd_nhs_jira_in_search_issue'))) && current.getValue('x_nhsd_nhs_jira_in_show_jira_tab') == true) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+
+    cancelJiraIssue: function(current) {
+        if (!current.isNewRecord() && current.active == true && current.getValue('x_nhsd_nhs_jira_in_create_issue') == true && (current.sys_class_name == 'incident' || current.sys_class_name == 'problem') && (current.x_nhsd_nhs_jira_in_issue_status != 'Cancel' && current.x_nhsd_nhs_jira_in_issue_status != '')) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+
+    /* This fuction is to check whether the project exists or not*/
+    isValidProject: function() {
+        var projectName = this.getParameter('sysparm_projectName');
+        var checkProject = new GlideRecord("u_nhs_data_lookup");
+        checkProject.addQuery("u_name", projectName);
+        checkProject.query();
+        if (checkProject.next()) {
+            var updateRecord = new GlideRecord("task");
+            updateRecord.addQuery("sys_id", this.getParameter('sysparm_recordID').toString());
+            updateRecord.query();
+            if (updateRecord.next()) {
+                updateRecord.x_nhsd_nhs_jira_in_jira_project = checkProject.sys_id.toString();
+                updateRecord.x_nhsd_nhs_jira_in_create_issue = "true";
+                updateRecord.update();
+            }
+            return "valid";
+        } else {
+            return "invalid";
+        }
+    },
+
+    type: 'getDefaultJIRAProjectScope'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-20 10:18:08</sys_created_on>
+        <sys_id>afbf2dc01b145550892d4046b04bcb60</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>getDefaultJIRAProjectScope</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_script_include_afbf2dc01b145550892d4046b04bcb60</sys_update_name>
+        <sys_updated_by>cog-roopesh.reddyb</sys_updated_by>
+        <sys_updated_on>2022-09-27 11:32:21</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="JIRA Information" section_id="b3ec9baa1b3f59502eee65b9bd4bcbfc" sys_domain="global" table="sn_customerservice_case" version="3" view="case">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_nhsd_nhs_jira_in_show_jira_tab</element>
+            <position>0</position>
+            <sys_created_by>cog-raghavendrakumar.patta</sys_created_by>
+            <sys_created_on>2022-12-19 12:25:35</sys_created_on>
+            <sys_id>094e136e1b3f59502eee65b9bd4bcb76</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="JIRA Information" display_value="JIRA Information" name="sn_customerservice_case" sys_domain="global" view="fb9a087b070001104733f7208c1ed0c3">b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_ui_section>
+            <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+            <sys_updated_on>2022-12-19 12:25:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_nhsd_nhs_jira_in_create_issue</element>
+            <position>1</position>
+            <sys_created_by>cog-raghavendrakumar.patta</sys_created_by>
+            <sys_created_on>2022-12-19 12:25:35</sys_created_on>
+            <sys_id>014e136e1b3f59502eee65b9bd4bcb77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="JIRA Information" display_value="JIRA Information" name="sn_customerservice_case" sys_domain="global" view="fb9a087b070001104733f7208c1ed0c3">b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_ui_section>
+            <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+            <sys_updated_on>2022-12-19 12:25:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>2</position>
+            <sys_created_by>cog-raghavendrakumar.patta</sys_created_by>
+            <sys_created_on>2022-12-19 12:25:35</sys_created_on>
+            <sys_id>cd4edb6e1b3f59502eee65b9bd4bcbfa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="JIRA Information" display_value="JIRA Information" name="sn_customerservice_case" sys_domain="global" view="fb9a087b070001104733f7208c1ed0c3">b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_ui_section>
+            <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+            <sys_updated_on>2022-12-19 12:25:35</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_nhsd_nhs_jira_in_issue_key</element>
+            <position>3</position>
+            <sys_created_by>cog-raghavendrakumar.patta</sys_created_by>
+            <sys_created_on>2022-12-19 12:25:35</sys_created_on>
+            <sys_id>c14edb6e1b3f59502eee65b9bd4bcbfb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="JIRA Information" display_value="JIRA Information" name="sn_customerservice_case" sys_domain="global" view="fb9a087b070001104733f7208c1ed0c3">b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_ui_section>
+            <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+            <sys_updated_on>2022-12-19 12:25:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_nhsd_nhs_jira_in_issue_url</element>
+            <position>4</position>
+            <sys_created_by>cog-raghavendrakumar.patta</sys_created_by>
+            <sys_created_on>2022-12-19 12:25:35</sys_created_on>
+            <sys_id>c54edb6e1b3f59502eee65b9bd4bcbfb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="JIRA Information" display_value="JIRA Information" name="sn_customerservice_case" sys_domain="global" view="fb9a087b070001104733f7208c1ed0c3">b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_ui_section>
+            <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+            <sys_updated_on>2022-12-19 12:25:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>cog-raghavendrakumar.patta</sys_created_by>
+            <sys_created_on>2022-12-19 12:25:35</sys_created_on>
+            <sys_id>c94edb6e1b3f59502eee65b9bd4bcbfb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="JIRA Information" display_value="JIRA Information" name="sn_customerservice_case" sys_domain="global" view="fb9a087b070001104733f7208c1ed0c3">b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_ui_section>
+            <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+            <sys_updated_on>2022-12-19 12:25:35</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_nhsd_nhs_jira_in_issue_status</element>
+            <position>6</position>
+            <sys_created_by>cog-raghavendrakumar.patta</sys_created_by>
+            <sys_created_on>2022-12-19 12:25:35</sys_created_on>
+            <sys_id>cd4edb6e1b3f59502eee65b9bd4bcbfb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="JIRA Information" display_value="JIRA Information" name="sn_customerservice_case" sys_domain="global" view="fb9a087b070001104733f7208c1ed0c3">b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_ui_section>
+            <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+            <sys_updated_on>2022-12-19 12:25:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_nhsd_nhs_jira_in_issue_id</element>
+            <position>7</position>
+            <sys_created_by>cog-raghavendrakumar.patta</sys_created_by>
+            <sys_created_on>2022-12-19 12:25:35</sys_created_on>
+            <sys_id>c14edb6e1b3f59502eee65b9bd4bcbfc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="JIRA Information" display_value="JIRA Information" name="sn_customerservice_case" sys_domain="global" view="fb9a087b070001104733f7208c1ed0c3">b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_ui_section>
+            <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+            <sys_updated_on>2022-12-19 12:25:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_nhsd_nhs_jira_in_jira_project</element>
+            <position>8</position>
+            <sys_created_by>cog-raghavendrakumar.patta</sys_created_by>
+            <sys_created_on>2022-12-19 12:25:35</sys_created_on>
+            <sys_id>c54edb6e1b3f59502eee65b9bd4bcbfc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="JIRA Information" display_value="JIRA Information" name="sn_customerservice_case" sys_domain="global" view="fb9a087b070001104733f7208c1ed0c3">b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_ui_section>
+            <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+            <sys_updated_on>2022-12-19 12:25:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>JIRA Information</caption>
+            <header>false</header>
+            <name>sn_customerservice_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>cog-raghavendrakumar.patta</sys_created_by>
+            <sys_created_on>2022-12-19 12:19:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_customerservice_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+            <sys_update_name>sys_ui_section_b3ec9baa1b3f59502eee65b9bd4bcbfc</sys_update_name>
+            <sys_updated_by>cog-raghavendrakumar.patta</sys_updated_by>
+            <sys_updated_on>2022-12-19 12:19:46</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Case" name="case">fb9a087b070001104733f7208c1ed0c3</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

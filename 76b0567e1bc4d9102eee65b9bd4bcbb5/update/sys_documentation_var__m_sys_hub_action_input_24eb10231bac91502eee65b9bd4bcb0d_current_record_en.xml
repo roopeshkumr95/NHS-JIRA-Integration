@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="current_record" label="current Record" language="en" table="var__m_sys_hub_action_input_24eb10231bac91502eee65b9bd4bcb0d">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>current_record</element>
+            <help/>
+            <hint/>
+            <label>current Record</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_24eb10231bac91502eee65b9bd4bcb0d</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Cog-RaghavendraKumar.Patta</sys_created_by>
+            <sys_created_on>2022-07-13 11:26:11</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>current Record</sys_name>
+            <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_24eb10231bac91502eee65b9bd4bcb0d_current_record_en</sys_update_name>
+            <sys_updated_by>Cog-RaghavendraKumar.Patta</sys_updated_by>
+            <sys_updated_on>2022-07-13 11:26:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

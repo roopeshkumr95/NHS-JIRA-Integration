@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>x_nhsd_nhs_jira_in_issue_id</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>cog-Roopesh.ReddyB</sys_created_by>
+        <sys_created_on>2022-06-28 13:46:32</sys_created_on>
+        <sys_id>f71c27ee1b109190892d4046b04bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_nhsd_nhs_jira_in_issue_id</sys_name>
+        <sys_package display_value="NHS Jira Integration" source="x_nhsd_nhs_jira_in">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NHS Jira Integration">76b0567e1bc4d9102eee65b9bd4bcbb5</sys_scope>
+        <sys_update_name>sys_ui_policy_action_f71c27ee1b109190892d4046b04bcbba</sys_update_name>
+        <sys_updated_by>cog-Roopesh.ReddyB</sys_updated_by>
+        <sys_updated_on>2022-06-28 13:46:32</sys_updated_on>
+        <table>task</table>
+        <ui_policy display_value="Make JIRA information fields readonly -  Scoped">4e9b63ae1b109190892d4046b04bcb7f</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

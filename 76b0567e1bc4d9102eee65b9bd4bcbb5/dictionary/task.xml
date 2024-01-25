@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.detail_row=short_description,all_tables.display_color=priority,all_tables.live_feed=true,all_tables.text_index_translations=true,extension_model=hierarchy,hasListeners=true,kagami_csindex_enabled=true,largeTable=true,reference_index_include=active" db_object_id="a745cab7b8202010304ceb7d5057e7b4" label="Task" max_length="40" name="task" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Create Issue" max_length="40" name="x_nhsd_nhs_jira_in_create_issue" type="boolean"/>
+        <element label="Issue ID" max_length="40" name="x_nhsd_nhs_jira_in_issue_id" type="string"/>
+        <element label="Issue Key" max_length="40" name="x_nhsd_nhs_jira_in_issue_key" type="string"/>
+        <element label="Issue Status" max_length="40" name="x_nhsd_nhs_jira_in_issue_status" type="string"/>
+        <element label="Issue URL" max_length="1024" name="x_nhsd_nhs_jira_in_issue_url" type="url"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="JIRA Project" max_length="32" name="x_nhsd_nhs_jira_in_jira_project" reference="u_nhs_data_lookup" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Reset JIRA Information" max_length="40" name="x_nhsd_nhs_jira_in_reset_jira_information" type="boolean"/>
+        <element active="false" attributes="edge_encryption_enabled=true,encode_utf8=false,no_audit=true,ref_ac_columns=x_nhsd_nhs_jira_in_issue_key;short_description,ref_ac_columns_search=true,ref_auto_completer=AJAXTableCompleter" label="Search Issue" max_length="32" name="x_nhsd_nhs_jira_in_search_issue" reference="task" reference_qual="x_nhsd_nhs_jira_in_issue_idISNOTEMPTY^x_nhsd_nhs_jira_in_create_issue=true^EQ" reference_qual_condition="x_nhsd_nhs_jira_in_issue_idISNOTEMPTY^x_nhsd_nhs_jira_in_create_issue=true^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Show Jira Tab" max_length="40" name="x_nhsd_nhs_jira_in_show_jira_tab" type="boolean"/>
+    </element>
+</database>
